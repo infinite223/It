@@ -1,0 +1,40 @@
+.Helps{
+    width: 100%;
+    height: 100vh;
+
+    flex-direction: column;
+
+    background-color: rgb(246, 250, 242);
+
+    letter-spacing: 4px;
+    h1{
+        font-size: 40px;
+        width: 800px;
+        text-align: center;
+    }
+
+    .Helps__content{
+        width: 70%;
+
+        flex-direction: row;
+
+        .Helps__content-box{
+            display: flex;
+            flex-direction: column;
+
+            padding: 2rem;
+            margin-bottom: 30px;
+
+            text-align: center;
+            h3{
+                margin-top: 2rem;
+            }
+            
+            p{
+                font-size: 17px;
+                color: rgba(88, 70, 70,.6);
+                letter-spacing: normal;
+            }
+        }
+    }
+}

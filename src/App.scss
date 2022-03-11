@@ -1,0 +1,29 @@
+.App{
+  font-family: sans-serif;
+
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button{
+    width: 150px;
+    height: fit-content;
+
+    padding: .7rem;
+    text-align: center;
+
+    border: 2px solid black;
+
+    color: black;
+
+    &:hover{
+      background-color: black;
+
+      color: white;
+
+
+    }
+  }
+  
+}
