@@ -1,0 +1,21 @@
+.Services{
+    width: 100%;
+    min-height:100vh;
+
+    background-color: white;
+
+    .Services__content{
+        width: 70%;
+
+        flex-direction: column;
+
+        margin-top: 50px;
+
+        .Services__content-items{
+            margin-top: 50px;
+
+            flex-wrap:wrap;
+            height: fit-content;
+        }
+    }
+}

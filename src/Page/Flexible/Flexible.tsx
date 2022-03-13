@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Flexible.scss"
+import { Numbers } from './Numbers/Numbers.tsx'
 
 function Flexible() {
   return (
@@ -34,6 +35,15 @@ function Flexible() {
                 </div>
             </div>
         </div>
+
+        <div className='Flexible__baner flex'>
+            <div className='Flexible__baner-wrap flex'>
+                <Numbers number="8 650" text="Satisfied Customers"/>
+                <Numbers number="4 650" text="Satisfied Customers"/>
+                <Numbers number="9 650" text="Satisfied Customers"/>
+                <Numbers number="5 650" text="Satisfied Customers"/>
+            </div>
+         </div>
     </div>
   )
 }

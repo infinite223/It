@@ -1,11 +1,13 @@
 .Flexible{
     width: 100%;
-    height: 100vh;
-
+    min-height: 100vh;
+    flex-direction: column;
     background-color: rgb(246, 250, 242);
 
     .Flexible__content{
-        width: 60%;
+        width: 70%;
+
+        margin-top: 60px;
 
         flex: start;
 
@@ -45,4 +47,25 @@
         }
     }
 
+    .Flexible__baner{
+        width: 100%;
+        height:350px;
+
+        margin-top: 60px;
+
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(https://images01.nicepage.com/23/2c/232c6d839624da0ae42d0f0b813ed0e8.jpeg);
+        background-position: 50% 50%;
+        object-fit: cover;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .Flexible__baner-wrap{
+            width: 70%;
+            height: 100%;
+            
+            margin: auto;
+            flex-wrap: wrap;
+        }
+    }
 }

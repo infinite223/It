@@ -1,0 +1,22 @@
+.Item{
+    width: 27%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+    margin-bottom: 30px;
+
+    text-align: center;
+    h3{
+        margin-top: 2rem;
+    }
+    
+    p{
+        font-size: 17px;
+        color: rgba(88, 70, 70,.6);
+        letter-spacing: normal;
+    }
+}
