@@ -10,7 +10,7 @@ function Helps() {
   return (
     <div className='Helps flex'>
         <h1>We help and solve your business problem</h1>
-        <div className='Helps__content flex'>
+        <div className='Helps__content flex'>   
             <div className='Helps__content-box flex'>
                 <FiDatabase size={35}/>
                 <h3>UNLIMITED STORAGE</h3>

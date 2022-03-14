@@ -9,4 +9,8 @@
         opacity: .8;
         font-weight: 500;
     }
+
+    @media screen and (max-width:950px){
+        padding: .5rem;
+     }
 }

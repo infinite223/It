@@ -3,7 +3,7 @@ import "./Footer.scss"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='Footer flex'>Website Templates created with Website Builder Software.</div>
   )
 }
 

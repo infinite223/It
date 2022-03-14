@@ -16,6 +16,11 @@
 
             flex-wrap:wrap;
             height: fit-content;
+
+            @media screen and (max-width:950px){
+                flex-direction: column;
+        
+             }
         }
     }
 }

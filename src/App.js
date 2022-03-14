@@ -1,5 +1,5 @@
 import './App.scss';
-import { Navbar,Header,Helps,Image,Flexible, Services, Footer} from "./Page/index.ts"
+import { Navbar,Header,Helps,Image,Flexible, Services, Images, Footer} from "./Page/index.ts"
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <Image/>
       <Flexible/>
       <Services/>
+      <Images/>
+      <Footer/>
     </div>
   );
 }

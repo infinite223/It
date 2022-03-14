@@ -19,5 +19,56 @@
         .Navbar__menu-link{
             margin: 0rem 2rem;
         }
+
+        @media screen and (max-width:950px){
+            display: none;
+        }
+    }
+    .Navbar__menu-smallscreen{
+        display: none;
+
+        @media screen and (max-width:950px){
+            display: flex;
+            flex: 2;
+            justify-content: flex-end;
+
+            margin-right: 2rem;
+        }
+
+        .Navbar__menu-options-smallscreen{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 250px;
+            height: 100vh;  
+
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            padding-top: 5rem;
+
+            background-color: black;
+            opacity: .9;
+
+            .Navbar__menu-link-small{
+                color: white;
+                margin: .5rem 0rem;
+
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(177, 145, 105);
+                }
+            }
+
+            .close{
+                font-size: 33px;
+                color: white;
+                cursor: pointer;
+                position: absolute;
+                top:20px;
+                right: 20px;
+            }
+        }
     }
 }

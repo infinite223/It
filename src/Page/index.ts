@@ -5,6 +5,6 @@ export {default as Helps}  from './Helps/Helps.tsx';
 export {default as Image}  from './Image/Image.tsx';
 export {default as Flexible}  from './Flexible/Flexible.tsx';
 export {Services} from './Services/Services.tsx';
-
+export {Images} from './Images/Images.tsx';
 
 
