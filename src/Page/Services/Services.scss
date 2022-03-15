@@ -2,7 +2,7 @@
     width: 100%;
     min-height:100vh;
 
-    background-color: white;
+    background-color: rgb(246, 250, 242);
 
     .Services__content{
         width: 70%;
@@ -12,14 +12,13 @@
         margin-top: 50px;
 
         .Services__content-items{
-            margin-top: 50px;
+            margin-top: 90px;
 
             flex-wrap:wrap;
             height: fit-content;
 
             @media screen and (max-width:950px){
-                flex-direction: column;
-        
+                flex-direction: column;     
              }
         }
     }

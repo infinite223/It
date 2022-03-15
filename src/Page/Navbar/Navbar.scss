@@ -3,11 +3,16 @@
     height: 90px;
 
     display: flex;
+    position: fixed;
     align-items: center;
+    z-index: 7;
 
-    background-color: beige;
+    color: white;
+
+    background-color: rgb(49, 47, 47);
+
     .Navbar-logo{
-        margin-left: 10px;
+        margin-left: 20px;
         justify-content: flex-start;
     }
     .Navbar__menu{
@@ -33,6 +38,10 @@
             justify-content: flex-end;
 
             margin-right: 2rem;
+
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         .Navbar__menu-options-smallscreen{
@@ -40,7 +49,7 @@
             flex-direction: column;
             align-items: center;
 
-            width: 250px;
+            width: 0;
             height: 100vh;  
 
             position: fixed;

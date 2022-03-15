@@ -11,7 +11,7 @@
         height: 100vh;
 
   
-        font-weight: 100;
+       
 
         @media screen and (max-width:950px){
             width: 100%;
@@ -20,7 +20,8 @@
     }
     .Image-left{
         h1{
-            margin-bottom:40px;
+            margin:30px 30px;
+            letter-spacing: 4px;
         }
     }
     .Image-right{
