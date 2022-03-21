@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 import { send } from 'emailjs-com';
+import { useNavigate } from "react-router-dom";
 import "./Contact.scss"
 export const Contact = () => {
+  let navigate = useNavigate(); 
+  
   const [toSend, setToSend] = useState({
     from_name: '',
     to_name: '',
@@ -35,7 +38,7 @@ export const Contact = () => {
       <div className='Contact__form flex'>
         <h1>Contact Us</h1>
 
-        <div className='Contact__logo'>INT.</div>
+        <div className='Contact__logo' onClick={()=> navigate("/")}>INT.</div>
 
         <form className='flex' >{//onSubmit={onSubmit}>
         }
