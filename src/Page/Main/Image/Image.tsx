@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Image.scss"
-import image from "../../images/iphones.jpg"
+import image from "../../../images/iphones.jpg"
 
 function Image() {
   return (

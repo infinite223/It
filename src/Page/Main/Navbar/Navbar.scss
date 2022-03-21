@@ -23,6 +23,10 @@
 
         .Navbar__menu-link{
             margin: 0rem 2rem;
+            &:hover{
+                color: rgb(142, 155, 155);
+                cursor: pointer;
+            }
         }
 
         @media screen and (max-width:950px){
@@ -65,8 +69,8 @@
                 margin: .5rem 0rem;
 
                 &:hover{
+                    color: rgb(142, 155, 155);
                     cursor: pointer;
-                    color: rgb(177, 145, 105);
                 }
             }
 

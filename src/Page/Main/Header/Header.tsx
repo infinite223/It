@@ -1,7 +1,10 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import './Header.scss'
 
 function Header() {
+  let navigate = useNavigate(); 
+
   return (
     <div className='Header flex'>
       <div className='Header__content flex'>
@@ -12,7 +15,7 @@ function Header() {
         <div className='Header__content-buttons flex'>
           <div className='button'>About as</div>
           <text>OR</text>
-          <div className='button'>Contact</div>
+          <div className='button' onClick={()=> navigate("/Contact")}>Contact</div>
         </div>
         </div>       
       </div>

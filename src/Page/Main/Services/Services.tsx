@@ -1,5 +1,5 @@
 import React from 'react'
-import {Item} from "./../../Components/Item.tsx"
+import {Item} from "./../../../Components/Item.tsx"
 import { FiDatabase } from "react-icons/fi"
 import "./Services.scss"
 

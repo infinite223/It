@@ -1,17 +1,16 @@
 import './App.scss';
-import { Navbar,Header,Helps,Image,Flexible, Services, Images, Footer} from "./Page/index.ts"
+import { MainPage, Contact} from "./Page/index.ts"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Header/>
-      <Helps/>
-      <Image/>
-      <Flexible/>
-      <Services/>
-      <Images/>
-      <Footer/>
+    <div>
+      <Router>  
+        <Routes>      
+          <Route path="/" element={ <MainPage/>} />   
+          <Route path="/Contact" element={<Contact/>}/>           
+        </Routes>     
+       </Router>
     </div>
   );
 }

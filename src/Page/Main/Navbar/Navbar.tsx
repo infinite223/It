@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import {GiHamburgerMenu} from 'react-icons/gi';
+import { useNavigate } from "react-router-dom";
 import { IoCloseOutline} from 'react-icons/io5'
 import { motion } from 'framer-motion';
 import './Navbar.scss'
 
 function Navbar() {
   const [toggleMenu,setToggleMenu] = useState(false);
-
+  let navigate = useNavigate(); 
   const [scrolled,setScrolled]=React.useState(false);
   const handleScroll=() => {
     const offset=window.scrollY;
@@ -28,11 +29,11 @@ function Navbar() {
 
   return (
     <div className='Navbar'>
-      <div className='Navbar-logo'>Logo</div>
+      <div className='Navbar-logo' onClick={()=> navigate("/")}>INT</div>
       <div className='Navbar__menu'>
-        <div className='Navbar__menu-link'>Home</div>
+        <div className='Navbar__menu-link' onClick={()=> navigate("/")}>Home</div>
         <div className='Navbar__menu-link'>Abaut</div>
-        <div className='Navbar__menu-link'>Contact</div>
+        <div className='Navbar__menu-link' onClick={()=> navigate("/Contact")}>Contact</div>
       </div>
       
       <div className='Navbar__menu-smallscreen'>
