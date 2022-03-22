@@ -44,9 +44,9 @@ function Navbar() {
         className='Navbar__menu-options-smallscreen'
         >
           <IoCloseOutline fontSize={27} className='close' onClick={()=>setToggleMenu(false)}/>
-          <div className='Navbar__menu-link-small'>Home</div>
+          <div className='Navbar__menu-link-small' onClick={()=> navigate("/")}>Home</div>
           <div className='Navbar__menu-link-small'>About</div>
-          <div className='Navbar__menu-link-small'>Contact</div>
+          <div className='Navbar__menu-link-small' onClick={()=> navigate("/Contact")}>Contact</div>
         </motion.div>}
       </div>
 

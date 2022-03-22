@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { send } from 'emailjs-com';
 import { useNavigate } from "react-router-dom";
+import { AiOutlinePhone } from "react-icons/ai"
+import { RiFacebookCircleFill } from "react-icons/ri"
 import "./Contact.scss"
 export const Contact = () => {
   let navigate = useNavigate(); 
@@ -36,12 +38,26 @@ export const Contact = () => {
   return (
     <div className='Contact flex'>
       <div className='Contact__form flex'>
-        <h1>Contact Us</h1>
-
-        <div className='Contact__logo' onClick={()=> navigate("/")}>INT.</div>
+        
+        <div className='Contact__help flex'>
+          <h3>Contact Us</h3>
+          <p>email: ..........@gmail.com</p>
+          <div className='flex' style={{display:"flex", marginTop:"40px"}}>
+            <div className='Contact__help-number flex'>
+              <RiFacebookCircleFill size={25} style={{marginRight:"7px"}}/> facebook
+            </div>
+            <div className='Contact__help-number flex'>
+              <AiOutlinePhone size={20} style={{marginRight:"7px"}}/> 893 324 321
+            </div>
+          </div>
+        </div>
 
         <form className='flex' >{//onSubmit={onSubmit}>
         }
+          <div className='Contact__logo' onClick={()=> navigate("/")}>INT.</div>
+          
+          <h3>Send us a message</h3>
+
           <input
             type='text'
             name='from_name'

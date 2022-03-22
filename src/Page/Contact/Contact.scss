@@ -8,17 +8,34 @@
 
     letter-spacing: 4px;
 
+    h3{
+      margin-bottom: 70px;
+      font-size: 22px;
+    }
+
     .Contact__form{
-        flex-direction: column;
         position: relative;
+        border-radius: 10px;
 
-        h1{
-            font-size: 25px;
+        .Contact__help{
+          flex-direction: column;
 
-            @media screen and (max-width:950px){
-                font-size: 20px;
-            }
+          height:100vh ;
+          width: 100%;
+
+          .Contact__help-number{
+            margin-left: 20px;
+            width: fit-content;
+            padding: .5rem;
+
+            border: solid 1.5px #D3D3D3;
+            border-radius: 20px;
+
+            letter-spacing: 2px;
+          }
         }
+
+
 
         .Contact__logo{
             position:absolute;
@@ -41,10 +58,13 @@
                  color: rgb(92, 87, 87);
              }
         }
+
+
        
         form{
             flex-direction: column;
             width: 100%;
+            height: auto;
 
             input {
                 width: 65%;
@@ -55,13 +75,14 @@
                 text-indent: 5px;
                 font-size: 12.6pt;
 
-                border: solid 1.5px #D3D3D3;
-
+                border: none;
+                border-bottom: solid 1.5px #D3D3D3;
+                background-color: rgb(241, 241, 241);
                 -webkit-transition: 1s; /* Safari */
                 transition: 1s;
 
                 @media screen and (max-width:950px){
-                    width: 85%;
+                    width: 80%;
                  }
 
               }
@@ -69,23 +90,25 @@
                 box-shadow: 0 0 5pt 0.5pt #D3D3D3;
               }
               textarea,input[type=text]:focus {
-                box-shadow: 0 0 5pt 2pt #D3D3D3;
+                box-shadow: 0 0 5pt 2pt #d3d3d3;
                 outline-width: 0px;
               }
 
               textarea{
                 width: 65%;
                 height: 200px;
-                margin-top: 7px;
+                margin-top: 12px;
                 text-align: left;
                 text-indent: 5px;
                 font-size: 12.6pt;
-                border: solid 1.5px #D3D3D3;
+                border: none;
+                border-bottom: solid 1.5px #D3D3D3;
+                background-color: rgb(241, 241, 241);
                 -webkit-transition: 1s; /* Safari */
                 transition: 1s;  
                 
                 @media screen and (max-width:950px){
-                    width: 85%;
+                    width: 80%;
                  }
                 
               }
@@ -93,12 +116,13 @@
               button{
                 width: 150px;
                 height: fit-content;
-                margin-top: 2rem;
+                margin: 2rem;
+   
             
                 padding: .7rem;
                 text-align: center;
             
-                border: 2px solid black;
+                border: solid 1.5px #D3D3D3;
             
                 color: black;
             
@@ -110,21 +134,20 @@
                   cursor: pointer;      
                 }
                 @media screen and (max-width:950px){
-                   width: 120px;
-
-                   padding: .4rem;
+                 
                  } 
               }
         }
 
         background-color: rgb(241, 241, 241);
 
-        width: 800px;
-        height: 90vh;
+        width: 80%;
+        min-height: 90vh;
 
         @media screen and (max-width:950px){
+            flex-direction: column;
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
          }  
 
     }
