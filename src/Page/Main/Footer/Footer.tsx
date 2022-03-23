@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { send } from 'emailjs-com';
+import { MdOutlineTextsms } from "react-icons/md"
 import "./Footer.scss"
 
 function Footer() {
@@ -33,10 +34,11 @@ function Footer() {
 
   return (
     <div className='Footer flex' id="Footer">
-      <div className='Footer__contact flex'>
+      
+      <div className='Footer__contact flex'>   
        <form >{//onSubmit={onSubmit}>
-        }         
-          <h1>Formularz kontaktowy</h1>
+        }    
+          <h1>Formularz kontaktowy. <MdOutlineTextsms color='grey' size={35}/></h1>
           <label>Imię i nazwisko</label>
           <input
             type='text'
