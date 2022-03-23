@@ -6,7 +6,7 @@ function Header() {
   let navigate = useNavigate(); 
 
   return (
-    <div className='Header flex'>
+    <div className='Header flex' id="Header">
       <div className='Header__content flex'>
         <div className='Header__content-image'></div>
         <div className='Header__content-main flex'>

@@ -29,11 +29,11 @@ function Navbar() {
 
   return (
     <div className='Navbar'>
-      <div className='Navbar-logo' onClick={()=> navigate("/")}>INT</div>
+      <a href="#Header"><div className='Navbar-logo'>INT</div></a>
       <div className='Navbar__menu'>
-        <div className='Navbar__menu-link' onClick={()=> navigate("/")}>Home</div>
+        <a href="#Header"><div className='Navbar__menu-link'>Home</div></a>
         <div className='Navbar__menu-link'>Abaut</div>
-        <div className='Navbar__menu-link' onClick={()=> navigate("/Contact")}>Contact</div>
+        <a href="#Footer"><div className='Navbar__menu-link'>Contact</div></a>
       </div>
       
       <div className='Navbar__menu-smallscreen'>
@@ -44,9 +44,9 @@ function Navbar() {
         className='Navbar__menu-options-smallscreen'
         >
           <IoCloseOutline fontSize={27} className='close' onClick={()=>setToggleMenu(false)}/>
-          <div className='Navbar__menu-link-small' onClick={()=> navigate("/")}>Home</div>
+          <a href="#Header"><div className='Navbar__menu-link-small' >Home</div></a>
           <div className='Navbar__menu-link-small'>About</div>
-          <div className='Navbar__menu-link-small' onClick={()=> navigate("/Contact")}>Contact</div>
+          <a href="#Footer"><div className='Navbar__menu-link-small'>Contact</div></a>
         </motion.div>}
       </div>
 
