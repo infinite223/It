@@ -27,7 +27,7 @@ function Helps() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
             </div>
         </div>
-        <div className='button'>About as</div>
+        <a href="#About"><div className='button'>About as</div></a>
 
     </div>
   )

@@ -32,8 +32,8 @@ function Navbar() {
       <a href="#Header"><div className='Navbar-logo'>INT</div></a>
       <div className='Navbar__menu'>
         <a href="#Header"><div className='Navbar__menu-link'>Home</div></a>
-        <div className='Navbar__menu-link'>Abaut</div>
-        <a href="#Footer"><div className='Navbar__menu-link'>Contact</div></a>
+        <a href="#About"><div className='Navbar__menu-link'>Abaut</div></a>
+        <a href={"#Footer"}><div className='Navbar__menu-link'>Contact</div></a>
       </div>
       
       <div className='Navbar__menu-smallscreen'>
@@ -45,7 +45,7 @@ function Navbar() {
         >
           <IoCloseOutline fontSize={27} className='close' onClick={()=>setToggleMenu(false)}/>
           <a href="#Header"><div className='Navbar__menu-link-small' >Home</div></a>
-          <div className='Navbar__menu-link-small'>About</div>
+          <a href="#About"><div className='Navbar__menu-link-small'>About</div></a>
           <a href="#Footer"><div className='Navbar__menu-link-small'>Contact</div></a>
         </motion.div>}
       </div>

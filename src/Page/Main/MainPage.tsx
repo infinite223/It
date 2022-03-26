@@ -1,4 +1,4 @@
-import { Navbar,Header,Helps,Image,Flexible, Services, Images, Footer} from "./../index.ts"
+import { Navbar,Header,Helps,Image,Flexible, Services, Images, About, Footer} from "./../index.ts"
 
 function MainPage() {
   return (
@@ -10,6 +10,7 @@ function MainPage() {
       <Flexible/>
       <Services/>
       <Images/>
+      <About/>
       <Footer/>
     </div>
   );

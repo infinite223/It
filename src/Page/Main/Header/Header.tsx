@@ -13,9 +13,9 @@ function Header() {
         <text>Random page</text>
         <h1>Lorem Ipsum</h1>
         <div className='Header__content-buttons flex'>
-          <div className='button'>About as</div>
+          <a href="#About"><div className='button'>About as</div></a>
           <text>OR</text>
-          <div className='button' onClick={()=> navigate("/Contact")}>Contact</div>
+          <a href="#Footer"><div className='button'>Contact</div></a>
         </div>
         </div>       
       </div>

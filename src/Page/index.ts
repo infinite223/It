@@ -7,6 +7,7 @@ export {default as Flexible}  from './Main/Flexible/Flexible.tsx';
 export {Services} from './Main/Services/Services.tsx';
 export {Images} from './Main/Images/Images.tsx';
 export {Contact} from './Contact/Contact.tsx';
+export {About}from './Main/About/About.tsx';
 export {default as MainPage} from './Main/MainPage.tsx';
 
 

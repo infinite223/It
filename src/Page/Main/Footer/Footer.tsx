@@ -33,7 +33,7 @@ function Footer() {
   };
 
   return (
-    <div className='Footer flex' id="Footer">
+    <section className='Footer flex' id="Footer">
       
       <div className='Footer__contact flex'>   
        <form >{//onSubmit={onSubmit}>
@@ -81,7 +81,7 @@ function Footer() {
 
       </div>
       <p>Website Templates created with Website Builder Software.</p>
-    </div>
+    </section>
   )
 }
 
