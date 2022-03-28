@@ -2,7 +2,7 @@ import React from 'react'
 import "./Image.scss"
 import image from "../../../images/iphones.jpg"
 
-function Image() {
+export const Image = () => {
   return (
     <div className='Image flex'>
         <div className='Image-left flex'>
@@ -16,5 +16,3 @@ function Image() {
     </div>
   )
 }
-
-export default Image

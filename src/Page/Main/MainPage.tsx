@@ -1,6 +1,6 @@
 import { Navbar,Header,Helps,Image,Flexible, Services, Images, About, Footer} from "./../index.ts"
 
-function MainPage() {
+export const MainPage = () => {
   return (
     <div className="App">
       <Navbar/>
@@ -16,4 +16,3 @@ function MainPage() {
   );
 }
 
-export default MainPage;

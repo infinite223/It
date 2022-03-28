@@ -1,5 +1,4 @@
 import React from 'react'
-import { FiDatabase } from "react-icons/fi"
 import './Item.scss'
 
 export const Item = ({icon}) => {

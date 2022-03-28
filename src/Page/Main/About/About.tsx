@@ -1,5 +1,6 @@
 import React from 'react'
 import  {FaQuestion} from "react-icons/fa"
+
 import "./About.scss"
 
 export const About = () => {

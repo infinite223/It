@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Helps.scss"
+
 import { FiDatabase } from "react-icons/fi"
 import { BiInfinite }  from "react-icons/bi"
 import { BsGlobe }  from "react-icons/bs"
 
 
 
-function Helps() {
+export const Helps = () => {
   return (
     <div className='Helps flex'>
         <h1>We help and solve your business problem</h1>
@@ -32,5 +33,3 @@ function Helps() {
     </div>
   )
 }
-
-export default Helps

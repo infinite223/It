@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import { send } from 'emailjs-com';
 import { MdOutlineTextsms } from "react-icons/md"
+
 import "./Footer.scss"
 
-function Footer() {
+export const Footer = () => {
   
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -84,5 +85,3 @@ function Footer() {
     </section>
   )
 }
-
-export default Footer

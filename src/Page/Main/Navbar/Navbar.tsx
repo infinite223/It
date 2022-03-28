@@ -5,7 +5,7 @@ import { IoCloseOutline} from 'react-icons/io5'
 import { motion } from 'framer-motion';
 import './Navbar.scss'
 
-function Navbar() {
+export const Navbar = () => {
   const [toggleMenu,setToggleMenu] = useState(false);
   let navigate = useNavigate(); 
   const [scrolled,setScrolled]=React.useState(false);
@@ -53,5 +53,3 @@ function Navbar() {
     </div>
   )
 }
-
-export default Navbar

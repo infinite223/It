@@ -2,7 +2,7 @@ import React from 'react'
 import "./Flexible.scss"
 import { Numbers } from './Numbers/Numbers.tsx'
 
-function Flexible() {
+export const Flexible = () => {
   return (
     <div className='Flexible flex'>
         <div className='Flexible__content'>
@@ -47,5 +47,3 @@ function Flexible() {
     </div>
   )
 }
-
-export default Flexible

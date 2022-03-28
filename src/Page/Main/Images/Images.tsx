@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Images.scss"
+
 export const Images = () => {
   return (
     <div className='Images flex'>

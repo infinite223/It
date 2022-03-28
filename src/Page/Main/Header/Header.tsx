@@ -1,9 +1,8 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+
 import './Header.scss'
 
-function Header() {
-  let navigate = useNavigate(); 
+export const Header = () => {
 
   return (
     <div className='Header flex' id="Header">
@@ -22,5 +21,3 @@ function Header() {
     </div>
   )
 }
-
-export default Header
