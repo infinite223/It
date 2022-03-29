@@ -37,8 +37,8 @@ export const Footer = () => {
     <section className='Footer flex' id="Footer">
       
       <div className='Footer__contact flex'>   
-       <form >{//onSubmit={onSubmit}>
-        }    
+       <form onSubmit={onSubmit}>
+            
           <h1>Formularz kontaktowy. <MdOutlineTextsms color='grey' size={35}/></h1>
           <label>Imię i nazwisko</label>
           <input
