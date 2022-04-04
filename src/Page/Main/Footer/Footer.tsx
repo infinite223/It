@@ -77,11 +77,20 @@ export const Footer = () => {
        </form>
 
         <div className='Contact__links flex'>
-          <h1>Contact Us</h1>
+          <h1>Informacje</h1>
         </div>
 
+        <div className='Contact__links flex'>
+          <h1>Regulamin</h1>
+        </div>
+        
+        <div className='Contact__links flex'>
+          <h1>Polityka prywatności</h1>
+        </div>
+
+
       </div>
-      <p>Website Templates created with Website Builder Software.</p>
+      <p>Copyright © 2022 - 2022 INT  All rights reserved.</p>
     </section>
   )
 }

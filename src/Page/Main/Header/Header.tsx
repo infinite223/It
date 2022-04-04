@@ -9,12 +9,12 @@ export const Header = () => {
       <div className='Header__content flex'>
         <div className='Header__content-image'></div>
         <div className='Header__content-main flex'>
-        <text>Random page</text>
-        <h1>Lorem Ipsum</h1>
+        <text>INT sp. z o.o.</text>
+        <h1>Wdrażanie nowych technologii</h1>
         <div className='Header__content-buttons flex'>
-          <a href="#About"><div className='button'>About as</div></a>
-          <text>OR</text>
-          <a href="#Footer"><div className='button'>Contact</div></a>
+          <a href="#About"><div className='button'>O INT</div></a>
+          <text></text>
+          <a href="#Footer"><div className='button'>Kontakt</div></a>
         </div>
         </div>       
       </div>

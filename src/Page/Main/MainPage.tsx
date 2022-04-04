@@ -9,7 +9,8 @@ export const MainPage = () => {
       <Image/>
       <Flexible/>
       <Services/>
-      <Images/>
+     {// <Images/>
+     }
       <About/>
       <Footer/>
     </div>

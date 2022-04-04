@@ -10,7 +10,7 @@ import { BsGlobe }  from "react-icons/bs"
 export const Helps = () => {
   return (
     <div className='Helps flex'>
-        <h1>We help and solve your business problem</h1>
+        <h1>Pomożemy rozwiązać Twój problem w biznesie i nie tylko</h1>
         <div className='Helps__content flex'>   
             <div className='Helps__content-box flex'>
                 <FiDatabase size={35}/>
@@ -28,7 +28,7 @@ export const Helps = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
             </div>
         </div>
-        <a href="#About"><div className='button'>About as</div></a>
+        <a href="#About"><div className='button'>O INT</div></a>
 
     </div>
   )

@@ -6,12 +6,11 @@ export const Image = () => {
   return (
     <div className='Image flex'>
         <div className='Image-left flex'>
-            <h1>We focus on ensuring a competitive edge</h1>
+            <h1>Skupiamy się na dostarczaniu najlepszych usług w Polsce i Europie</h1>
             <img width="350px" src={image} alt="picture9"/>
         </div>
         <div className='Image-right flex'>
-        <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes.
-         You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. </p>
+        <p>Wyznajemy zasadę, że sukces firmy jest możliwy tylko, gdy sukcesy odnoszą nasi Partnerzy. Dlatego nie przestajemy inwestować w rozwój i optymalizację oferowanych przez nas usług. Dzielimy się wiedzą oraz prowadzimy działania wspierające Państwa biznes. </p>
         </div>
     </div>
   )

@@ -32,8 +32,10 @@ export const Navbar = () => {
       <a href="#Header"><div className='Navbar-logo'>INT</div></a>
       <div className='Navbar__menu'>
         <a href="#Header"><div className='Navbar__menu-link'>Home</div></a>
-        <a href="#About"><div className='Navbar__menu-link'>Abaut</div></a>
-        <a href={"#Footer"}><div className='Navbar__menu-link'>Contact</div></a>
+        <a href="#About"><div className='Navbar__menu-link'>O INT</div></a>
+        <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
+        <a href={"#Footer"}><div className='Navbar__menu-link'>Kontakt</div></a>
+        <a href={"#karier"}><div className='Navbar__menu-link'>kariera</div></a>
       </div>
       
       <div className='Navbar__menu-smallscreen'>
@@ -45,8 +47,10 @@ export const Navbar = () => {
         >
           <IoCloseOutline fontSize={27} className='close' onClick={()=>setToggleMenu(false)}/>
           <a href="#Header"><div className='Navbar__menu-link-small' >Home</div></a>
-          <a href="#About"><div className='Navbar__menu-link-small'>About</div></a>
-          <a href="#Footer"><div className='Navbar__menu-link-small'>Contact</div></a>
+          <a href="#About"><div className='Navbar__menu-link-small'>O INT</div></a>
+          <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
+          <a href="#Footer"><div className='Navbar__menu-link-small'>Kontakt</div></a>
+          <a href={"#karier"}><div className='Navbar__menu-link'>kariera</div></a>
         </motion.div>}
       </div>
 
