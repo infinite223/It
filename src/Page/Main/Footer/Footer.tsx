@@ -1,11 +1,12 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { send } from 'emailjs-com';
 import { MdOutlineTextsms } from "react-icons/md"
+import { Window } from '../../../Components/Window.tsx';
 
 import "./Footer.scss"
 
 export const Footer = () => {
-  
+  const [toggleWindow, setToggleWindow] = useState(false);
   const [toSend, setToSend] = useState({
     from_name: '',
     to_name: '',
@@ -76,20 +77,14 @@ export const Footer = () => {
           
        </form>
 
-        <div className='Contact__links flex'>
-          <h1>Informacje</h1>
-        </div>
-
-        <div className='Contact__links flex'>
-          <h1>Regulamin</h1>
-        </div>
-        
-        <div className='Contact__links flex'>
+        <div className='Footer__links flex' id="Karier">
+          <h1 onClick={()=>setToggleWindow(true)}>Informacje</h1>
+          <h1>Regulamin</h1>  
           <h1>Polityka prywatności</h1>
         </div>
-
-
+        
       </div>
+      {toggleWindow&&<Window setToggleWindow={setToggleWindow}/>}
       <p>Copyright © 2022 - 2022 INT  All rights reserved.</p>
     </section>
   )

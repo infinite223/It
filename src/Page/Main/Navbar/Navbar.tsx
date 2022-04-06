@@ -34,8 +34,8 @@ export const Navbar = () => {
         <a href="#Header"><div className='Navbar__menu-link'>Home</div></a>
         <a href="#About"><div className='Navbar__menu-link'>O INT</div></a>
         <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
-        <a href={"#Footer"}><div className='Navbar__menu-link'>Kontakt</div></a>
-        <a href={"#karier"}><div className='Navbar__menu-link'>kariera</div></a>
+        <a href="#Footer"><div className='Navbar__menu-link'>Kontakt</div></a>
+        <a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>
       </div>
       
       <div className='Navbar__menu-smallscreen'>
@@ -50,7 +50,7 @@ export const Navbar = () => {
           <a href="#About"><div className='Navbar__menu-link-small'>O INT</div></a>
           <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
           <a href="#Footer"><div className='Navbar__menu-link-small'>Kontakt</div></a>
-          <a href={"#karier"}><div className='Navbar__menu-link'>kariera</div></a>
+          <a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>
         </motion.div>}
       </div>
 

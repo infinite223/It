@@ -1,6 +1,6 @@
 .Footer{
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     flex-direction: column;
 
     background-color: rgb(49, 47, 47);
@@ -100,20 +100,17 @@
               } 
         }
 
-        .Contact__links{
-            width:30%;
-        }
-        .Contact__links{
-            width: 30%;
-        }
-        .Contact__links{
-            width: 30%;
-        }
 
         @media screen and (max-width:950px){
             flex-direction: column;
             align-items: center;
             width: 90%;
           } 
+        
+          .Footer__links{
+              width: 50%;
+
+              flex-direction: column;
+          }
     }
 }
