@@ -31,6 +31,7 @@ INT sp. z o.o. umożliwia wszystkim partnerom dostarczanie kompleksowych rozwią
         </div>
 
         <div className='Flexible__baner flex'>
+            <h1>O INT</h1>
             <div className='Flexible__baner-wrap flex'>
                 <Numbers number="120" text="Zadowolonych firm"/>
                 <Numbers number="1500" text="Wykonanych projektów"/>

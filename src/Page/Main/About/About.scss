@@ -13,7 +13,8 @@
     P{
         width: 400px;
 
-        text-align: center;
+        text-align:center;
+        line-height: 27px;
 
         @media screen and (max-width:650px){
             width: 350px;
@@ -24,5 +25,5 @@
 .About__icon{
     position: absolute;
 
-    opacity: .4;
+    opacity: .25;
 }
