@@ -117,6 +117,7 @@
               h1{
                   cursor: pointer;
                   letter-spacing: 2px;
+                  text-align: center;
                   font-size: large;
                   z-index: 2;
 
@@ -126,14 +127,4 @@
               }
           }
     }
-    p{
-        position: relative;
-        top:60px;
-        margin: auto;
-        text-align: center;
-
-        @media screen and (max-width:1150px){
-            top:0px;
-          } 
-    }
-}
+}   
