@@ -6,18 +6,34 @@ import "./Services.scss"
 export const Services = () => {
   const items = [
     {
-      title:"chujj",
+      title:"Help desk",
       description:"tutaj sobie wpisz tekst, sprzedaje rocco :(",
       icon:<FiDatabase size={35}/>
     },
     {
-      title:"heheszkii",
+      title:"Doradztwo It",
       description:"nie no, taki żarcik byqu, robimy 400hp",
       icon:<FiDatabase size={35}/>
     },
     {
-      title:":(",
+      title:"Wdrażanie nowych technologii",
       description:"ale w sumie to mnie nie stać więc jebać",
+      icon:<FiDatabase size={35}/>
+    }
+    ,
+    {
+      title:"Poradniki",
+      description:"ale w sumie to mnie nie stać więc jebać",
+      icon:<FiDatabase size={35}/>
+    },
+    {
+      title:"Analiza danych (SQL)",
+      description:"ale w sumie to mnie nie stać więc jebać",
+      icon:<FiDatabase size={35}/>
+    },
+    {
+      title:"Tworzenie aplikacji informatycznych",
+      description:"tekst jakiś ...",
       icon:<FiDatabase size={35}/>
     }
   ]

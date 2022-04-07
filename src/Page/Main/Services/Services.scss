@@ -1,6 +1,7 @@
 .Services{
     width: 100%;
     min-height:100vh;
+    z-index: 10;
 
     background-color: rgb(246, 250, 242);
 
@@ -14,7 +15,7 @@
         }
 
         .Services__content-items{
-            margin-top: 90px;
+            margin: 70px 0px;
 
             flex-wrap:wrap;
             height: fit-content;

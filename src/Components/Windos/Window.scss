@@ -1,0 +1,122 @@
+.window{
+    position:absolute;
+    z-index: 9;
+    margin: auto;
+    flex-direction: column;
+
+    width: 600px;
+    height: 600px;
+
+    background-color: rgba(224,223,227,255);
+    box-shadow: inset 0 0 1em rgb(61, 61, 60), 0 0 1em rgb(97, 95, 95);
+
+
+    color: rgb(34, 32, 32);
+
+    .button-exit{
+            width: 60px;
+            height: fit-content;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            
+        
+            padding: .14rem;
+        
+            border: 2px solid rgb(79, 85, 85);;
+        
+            color: black;
+            text-align: center;
+        
+            &:hover{
+              background-color:  rgb(79, 85, 85);
+        
+              color: white;
+              
+              cursor: pointer;
+            }        
+    }
+
+    p{
+        padding: 1rem 4rem;
+
+        line-height: 23px;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width:850px){
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+
+        margin-top: 290px;
+     } 
+
+
+
+     h1{
+       text-align: center;
+     }
+
+    .window__content{
+      width: 550px;
+      @media screen and (max-width:850px){
+       width: fit-content;
+     } 
+      
+      h1{
+        color: rgb(103, 97, 97);
+        text-align: left;
+        font-size: 27px;
+        letter-spacing: 2px;
+        font-weight: 600;
+      }
+
+      h2{
+        font-weight: 300;
+        color: rgb(63, 58, 58);
+      }
+
+      padding: 2rem 1rem;
+
+      form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        border: .02rem solid gray;
+        padding:.8rem .0rem;
+
+        @media screen and (max-width:850px){
+          flex-direction: column;
+        } 
+         
+    }
+    } 
+}
+
+select{
+  background-color: rgba(224,223,227,255);
+  margin: 4px;
+  width:fit-content;
+  padding: 3px 0px;
+  text-align: center;
+
+  @media screen and (max-width:850px){
+    width: 90%;
+  } 
+}
+input{
+  font-size: 15px;
+  background-color: rgba(224,223,227,255);
+  border: .02rem solid gray;
+  margin: 4px;
+  padding: 3px 0px;
+  text-align: center;
+  width: 100%;
+  @media screen and (max-width:850px){
+    width: 90%;
+  } 
+}

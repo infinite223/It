@@ -10,9 +10,6 @@
         width: 50%;
         height: 100vh;
 
-  
-       
-
         @media screen and (max-width:950px){
             width: 100%;
             height: 700px;
@@ -20,17 +17,22 @@
     }
     .Image-left{
         h1{
-            margin:30px 80px;
+            margin:0px 100px;
             letter-spacing: 4px;
+        }
+        p{
+            padding: 4.5rem;
+            color: rgba(88, 70, 70,.6);
+            text-align: center;
         }
     }
     .Image-right{
-        background-image: url("../../../images/background.jpeg");
+        background-image: url("../../../images/image.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         
-        font-size: larger;
-        color: white;
+        font-size: larger;  
+        color: rgb(221, 202, 202);
         text-align: center;
 
         p{

@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import { send } from 'emailjs-com';
 import { MdOutlineTextsms } from "react-icons/md"
-import { Window } from '../../../Components/Window.tsx';
+import { WindowReg } from '../../../Components/Windos/WindowReg.tsx';
+import { WindowKarier } from '../../../Components/Windos/WindowKarier.tsx';
+import{ ImArrowDownRight } from 'react-icons/im'
 
 import "./Footer.scss"
 
 export const Footer = () => {
-  const [toggleWindow, setToggleWindow] = useState(false);
+  const [toggleWindowReg, setToggleWindowReg] = useState(false);
+  const [toggleWindowKarier, setToggleWindowKarier] = useState(false);
+  const [toggleWindowPp, setToggleWindowPp] = useState(false);
   const [toSend, setToSend] = useState({
     from_name: '',
     to_name: '',
@@ -78,13 +82,15 @@ export const Footer = () => {
        </form>
 
         <div className='Footer__links flex' id="Karier">
-          <h1 onClick={()=>setToggleWindow(true)}>Informacje</h1>
-          <h1>Regulamin</h1>  
+          <h1>Informacje</h1>
+          <h1 onClick={()=>setToggleWindowReg(true)}>Regulamin</h1>  
           <h1>Polityka prywatności</h1>
+          <h1 onClick={()=>setToggleWindowKarier(true)}>Kariera</h1>
         </div>
         
       </div>
-      {toggleWindow&&<Window setToggleWindow={setToggleWindow}/>}
+      {toggleWindowReg&&<WindowReg setToggleWindowReg={setToggleWindowReg}/>}
+      {toggleWindowKarier&&<WindowKarier setToggleWindowKarier={setToggleWindowKarier}/>}
       <p>Copyright © 2022 - 2022 INT  All rights reserved.</p>
     </section>
   )

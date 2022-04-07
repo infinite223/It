@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Window.scss"
-export const Window = ({setToggleWindow}) => {
+export const WindowReg = ({setToggleWindowReg}) => {
   return (
     <div className='window flex'>
-        <div className='button-exit' onClick={()=>setToggleWindow(false)}>Exit</div>
+        <div className='button-exit' onClick={()=>setToggleWindowReg(false)}>Exit</div>
         <h1>Regulamin</h1>
         <p>Mąż przed wyjściem do pracy mówi do żony:<br/>
         - Wiesz, po goleniu czuje się tak, jakbym miał ze dwadzieścia lat mniej ...<br/>

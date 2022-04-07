@@ -83,6 +83,7 @@
                   cursor: pointer;      
                 }
               }
+
               @media screen and (max-width:950px){
                  height: 100vh;
                  justify-content: center;
@@ -111,6 +112,28 @@
               width: 50%;
 
               flex-direction: column;
+              position: relative;
+
+              h1{
+                  cursor: pointer;
+                  letter-spacing: 2px;
+                  font-size: large;
+                  z-index: 2;
+
+                  &:hover{
+                      color: rgb(118, 133, 133);
+                  }
+              }
           }
+    }
+    p{
+        position: relative;
+        top:60px;
+        margin: auto;
+        text-align: center;
+
+        @media screen and (max-width:1150px){
+            top:0px;
+          } 
     }
 }
