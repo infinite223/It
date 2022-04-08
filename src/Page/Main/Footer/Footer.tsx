@@ -40,6 +40,7 @@ export const Footer = () => {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+  
 
   return (
     <section className='Footer flex' id="Footer">

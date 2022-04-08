@@ -1,6 +1,24 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./Window.scss"
 export const WindowKarier = ({setToggleWindowKarier}) => {
+    const [scrolled,setScrolled]=React.useState(false);
+    const handleScroll=() => {
+      const offset=window.scrollY;
+      if(offset > 200 ){
+        setScrolled(true);
+      }
+      else{
+        setScrolled(false);
+      }
+    }
+  
+    useEffect(() => {
+      window.addEventListener('scroll',handleScroll)
+    })
+    let navbarClasses=['window'];
+    if(scrolled){
+      navbarClasses.push('scrolled');
+    }
   return (
     <div className='window'>
         <div className='button-exit' onClick={()=>setToggleWindowKarier(false)}>Exit</div>
