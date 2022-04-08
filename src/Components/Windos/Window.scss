@@ -3,6 +3,8 @@
     z-index: 9;
     margin: auto;
     flex-direction: column;
+    display: flex;
+    align-items: center;
 
     width: 600px;
     height: 600px;
@@ -62,9 +64,18 @@
 
     .window__content{
       width: 550px;
+      max-height: 80%;
+      overflow-y:scroll;
+      overflow-x:hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
       @media screen and (max-width:850px){
        width: 90%;
      } 
+     .window__content::-webkit-scrollbar {
+       display: none;
+      } 
       
       h1{
         color: rgb(103, 97, 97);
@@ -87,7 +98,7 @@
         justify-content: center;
 
         width: 100%;
-        border: .02rem solid gray;
+        border: .01rem solid rgba(194, 189, 189, .9);
         padding:.8rem .0rem;
 
         @media screen and (max-width:850px){
@@ -101,23 +112,35 @@
 select{
   background-color: rgba(224,223,227,255);
   margin: 4px;
-  width:fit-content;
+  width:100%;
   padding: 3px 0px;
   text-align: center;
+  color: rgb(103, 97, 97);
+  font-size: 15px;
 
   @media screen and (max-width:850px){
-    width: 100%;
+    width: 97%;
   } 
 }
 input{
   font-size: 15px;
+  color: rgb(103, 97, 97);
   background-color: rgba(224,223,227,255);
   border: .02rem solid gray;
   margin: 4px;
   padding: 3px 0px;
   text-align: center;
   width: 100%;
+
   @media screen and (max-width:850px){
-    width: 100%;
+    width: 97%;
   } 
+  &:focus {
+    outline: 0;
+    border-color: #5f1d1d;
+  }
+}
+.input-file{
+  width: 100%;
+
 }

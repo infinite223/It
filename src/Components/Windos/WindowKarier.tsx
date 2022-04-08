@@ -30,6 +30,31 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                 <input type="text" placeholder='Miasto'/>
                 <input type="text" placeholder='Wojewódżtwo'/>
             </form>
+            <h2>Dane Zawodowe</h2>
+            <form action="...">
+                    <select name="nazwa">
+                        <option>Doświadczenie</option>
+                        <option>0 lat</option>
+                        <option>1 rok</option>
+                    </select>
+                    <select name="nazwa">
+                        <option>Wykształcenie</option>
+                        <option>Brak wykształcenia</option>
+                        <option>Podstawowe</option>
+                        <option>Sportowa (bezmózg totalny)</option>
+                        <option>Zawodowe</option>
+                        <option>Sredie zawodowe</option>
+                        <option>Student debil z PO</option>
+                    </select>
+            </form>
+            <h2>Email</h2>
+            <form action="...">
+                <input type="text" placeholder='Email'/>
+            </form>
+            <h2>CV</h2>
+            <form action="...">
+                <input className='input-file' type="file"  placeholder='dodaj swoje CV'/>
+            </form>
         </div>
         
     </div>
