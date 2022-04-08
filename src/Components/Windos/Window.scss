@@ -50,10 +50,10 @@
     @media screen and (max-width:850px){
         flex-direction: column;
         width: 100%;
-        min-height: 100vh;
-        height: auto;
+        height: 100vh;
+        left: 0px;
+        bottom:0px;
 
-        margin-top: 290px;
      } 
 
 
@@ -73,7 +73,7 @@
       @media screen and (max-width:850px){
        width: 90%;
      } 
-     .window__content::-webkit-scrollbar {
+      &::-webkit-scrollbar {
        display: none;
       } 
       
@@ -142,5 +142,4 @@ input{
 }
 .input-file{
   width: 100%;
-
 }
