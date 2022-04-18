@@ -15,17 +15,25 @@ export const Helps = () => {
             <div className='Helps__content-box flex'>
                 <FiDatabase size={35}/>
                 <h3>UNLIMITED STORAGE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <p>
+                    Głównym priorytetem naszego przędsiębiorstwa jest rozwiązywanie i utrzymywaniem 
+                    infrastruktury informatycznej Państwa firm.
+                </p>
             </div>
             <div className='Helps__content-box flex'>
                 <BiInfinite size={35}/>
                 <h3>UNMETERED BANDWIDTH</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <p>
+                    Posiadamy długoletnie doświadczenie w doradztwie i tworzeniu aplikacji,stron internetowych i nie tylko.
+                </p>
             </div>
             <div className='Helps__content-box flex'>
                 <BsGlobe size={35}/>
                 <h3>DOMAIN REGISTRATION</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <p>
+                     Działamy i pilnujemy Państwa firmy przez 24h na dobe by dostarczać najlepsze usługi.
+                    to daj do Pomożemy rozwiązać Twój problem w biznesie i nie tylko
+                </p>
             </div>
         </div>
         <a href="#About"><div className='button'>O INT</div></a>

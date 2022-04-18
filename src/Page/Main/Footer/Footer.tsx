@@ -100,7 +100,9 @@ export const Footer = () => {
       {toggleWindowKarier&&<WindowKarier setToggleWindowKarier={setToggleWindowKarier}/>}
       {toggleWindowPp&&<WindowPp setToggleWindowPp={setToggleWindowPp}/>}
       {toggleWindowInfo&&<WindowInfo setToggleWindowInfo={setToggleWindowInfo}/>}
-      <p>Copyright © 2022 - 2022 INT  All rights reserved.</p>
+      <p>
+        Copyright © 2022 INT All rights reserved.
+      </p>
     </section>
   )
 }

@@ -54,16 +54,63 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                         <option>Doświadczenie</option>
                         <option>0 lat</option>
                         <option>1 rok</option>
+                        <option>2 lata</option>
+                        <option>3 lata</option>
+                        <option>4 lata</option>
+                        <option>5 lat</option>
+                        <option>6 lat</option>
+                        <option>7 lat</option>
+                        <option>8 lat</option>
+                        <option>9 lat</option>
+                        <option>10 lat</option>
+                        <option>15 lat</option>
+                        <option>20 lat</option>
                     </select>
-                    <select name="nazwa">
-                        <option>Wykształcenie</option>
-                        <option>Brak wykształcenia</option>
-                        <option>Podstawowe</option>
-                        <option>Sportowa (bezmózg totalny)</option>
-                        <option>Zawodowe</option>
-                        <option>Sredie zawodowe</option>
-                        <option>Student debil z PO</option>
-                    </select>
+                    <select>              
+                        <option value="0">
+                            Wykształcenie                    
+                        </option>
+                        <option value="1">              
+                            Bez wykształcenia
+                        </option>
+                        <option value="2">
+                            Podstawowe
+                        </option>
+                        <option value="3">
+                            Zawodowe
+                        </option>            
+                        <option value="4"> 
+                            Średnie zawodowe
+                        </option>
+                        <option value="5">
+                            Średnie ogólnokształcące
+                        </option>
+                        <option value="6">
+                            Wyższe licencjackie
+                        </option>
+                        <option value="7">      
+                            Wyższe inżynierskie
+                        </option>
+                        <option value="8"> 
+                            Wyższe magisterskie
+                        </option>
+                        <option value="9">                 
+                            Wyższe mgr inż.
+                        </option>
+                        <option value="10">                  
+                            Studia MBA
+                        </option>              
+                        <option value="11">                    
+                            Doktorat
+                        </option>            
+                        <option value="12">                   
+                            Doktor hab.
+                        </option>        
+                        <option value="13">                   
+                            Profesor
+                        </option>           
+                </select>
+                                   
             </form>
             <h2>Email</h2>
             <form action="...">
@@ -71,8 +118,9 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
             </form>
             <h2>CV</h2>
             <form action="...">
-                <input className='input-file' type="file"  placeholder='dodaj swoje CV'/>
+                <input className='custom-file-input' type="file"/>
             </form>
+            <button className='button-apply'>Aplikuj</button>
         </div>
         
     </div>

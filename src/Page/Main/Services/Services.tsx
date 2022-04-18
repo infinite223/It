@@ -32,7 +32,17 @@ export const Services = () => {
       icon:<FiDatabase size={35}/>
     },
     {
-      title:"Tworzenie aplikacji informatycznych",
+      title:"Software house",
+      description:"tekst jakiś ...",
+      icon:<FiDatabase size={35}/>
+    },
+    {
+      title:"Cyberbezpieczeństwo ",
+      description:"tekst jakiś ...",
+      icon:<FiDatabase size={35}/>
+    },
+    {
+      title:"marketing internetowy",
       description:"tekst jakiś ...",
       icon:<FiDatabase size={35}/>
     }
