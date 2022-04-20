@@ -96,17 +96,14 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                         </option>
                         <option value="9">                 
                             Wyższe mgr inż.
-                        </option>
-                        <option value="10">                  
-                            Studia MBA
-                        </option>              
-                        <option value="11">                    
+                        </option>            
+                        <option value="10">                    
                             Doktorat
                         </option>            
-                        <option value="12">                   
+                        <option value="11">                   
                             Doktor hab.
                         </option>        
-                        <option value="13">                   
+                        <option value="12">                   
                             Profesor
                         </option>           
                 </select>

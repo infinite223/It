@@ -35,7 +35,7 @@ export const Navbar = () => {
         <a href="#About"><div className='Navbar__menu-link'>O INT</div></a>
         <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
         <a href="#Footer"><div className='Navbar__menu-link'>Kontakt</div></a>
-        <a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>
+        {/*<a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>*/}
       </div>
       
       <div className='Navbar__menu-smallscreen'>
