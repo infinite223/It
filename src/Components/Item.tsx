@@ -6,7 +6,7 @@ export const Item = ({icon, title, description}) => {
     <div className='Item'>
          {icon}
           <h3>{title}</h3>
-          <p>{description}</p>
+          {/*<p>{description}</p>*/}
     </div>
  
   )

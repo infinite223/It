@@ -3,28 +3,36 @@ import { Item } from "./../../../Components/Item.tsx"
 import { FiDatabase } from "react-icons/fi"
 import "./Services.scss"
 
+import { GrShieldSecurity, GrWorkshop } from 'react-icons/gr'
+import { BiBuildingHouse } from 'react-icons/bi'
+import { GrTechnology } from 'react-icons/gr'
+
+import helpIcon from './../../../images/icons/help.png'
+import helpDeskIcon from './../../../images/icons/help-desk.png'
+import informationtIcon from './../../../images/icons/information.png'
+
 export const Services = () => {
   const items = [
     {
       title:"Help desk",
       description:"tutaj sobie wpisz tekst, sprzedaje rocco :(",
-      icon:<FiDatabase size={35}/>
+      icon:<img src={helpIcon} width="40px"/>
     },
     {
       title:"Doradztwo It",
       description:"nie no, taki żarcik byqu, robimy 400hp",
-      icon:<FiDatabase size={35}/>
+      icon:<img src={helpDeskIcon} width="40px"/>
     },
     {
       title:"Wdrażanie nowych technologii",
       description:"ale w sumie to mnie nie stać więc jebać",
-      icon:<FiDatabase size={35}/>
+      icon:<GrTechnology size={35}/>
     }
     ,
     {
       title:"Poradniki",
       description:"ale w sumie to mnie nie stać więc jebać",
-      icon:<FiDatabase size={35}/>
+      icon:<img src={informationtIcon} width="40px"/>
     },
     {
       title:"Analiza danych (SQL)",
@@ -34,17 +42,17 @@ export const Services = () => {
     {
       title:"Software house",
       description:"tekst jakiś ...",
-      icon:<FiDatabase size={35}/>
+      icon:<BiBuildingHouse size={35}/>
     },
     {
       title:"Cyberbezpieczeństwo ",
       description:"tekst jakiś ...",
-      icon:<FiDatabase size={35}/>
+      icon:<GrShieldSecurity size={35}/>
     },
     {
       title:"marketing internetowy",
       description:"tekst jakiś ...",
-      icon:<FiDatabase size={35}/>
+      icon:<GrWorkshop size={35}/>
     }
   ]
 

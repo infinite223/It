@@ -5,9 +5,9 @@ import { FiDatabase } from "react-icons/fi"
 import { BiInfinite }  from "react-icons/bi"
 import { BsGlobe }  from "react-icons/bs"
 
-import priorityIcon from "../../../images/priority.png"
-import satisfactionIcon from "../../../images/satisfaction.png"
-import teamIcon from "../../../images/management.png"
+import priorityIcon from "../../../images/icons/priority.png"
+import satisfactionIcon from "../../../images/icons/satisfaction.png"
+import teamIcon from "../../../images/icons/management.png"
 
 
 
