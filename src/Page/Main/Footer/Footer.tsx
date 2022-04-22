@@ -5,7 +5,6 @@ import { WindowReg } from '../../../Components/Windos/WindowReg.tsx';
 import { WindowKarier } from '../../../Components/Windos/WindowKarier.tsx';
 import { WindowPp } from '../../../Components/Windos/WindowPp.tsx';
 import { WindowInfo } from '../../../Components/Windos/WindowInfo.tsx';
-import{ ImArrowDownRight } from 'react-icons/im'
 
 import "./Footer.scss"
 
