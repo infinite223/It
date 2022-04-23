@@ -34,9 +34,10 @@
            .Flexible__content__main-box{
                display: flex;
                flex-direction: column;
+               justify-content: center;
 
                width: fit-content;
-               min-height: 240px;
+               min-height: 170px;
 
                background-color: rgb(251, 256, 246);
                border-radius: 10px;

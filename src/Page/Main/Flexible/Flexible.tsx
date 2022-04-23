@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Flexible.scss"
-import { Numbers } from './Numbers/Numbers.tsx'
 
 export const Flexible = () => {
   return (
@@ -8,7 +7,7 @@ export const Flexible = () => {
         <div className='Flexible__content'>
             <h1>Wyprzedzamy konkurencje o dwa kroki</h1>
             <div className='text'>
-INT sp. z o.o. umożliwia wszystkim partnerom dostarczanie kompleksowych rozwiązań IT na całym świecie, skupiając się na doractwie, wsparciu i rozwiązywaniu problemów infromatycznych,cyberbezpieczeńswie, wdrożeniach, szkoleniach, analizie bazy danych,  i technologiach nowej generacji.
+                INT sp. z o.o. umożliwia wszystkim partnerom dostarczanie kompleksowych rozwiązań IT na całym świecie, skupiając się na doractwie, wsparciu i rozwiązywaniu problemów infromatycznych,cyberbezpieczeńswie, wdrożeniach, szkoleniach, analizie bazy danych,  i technologiach nowej generacji.
             </div>
 
             <div className='Flexible__content__main'>
@@ -29,15 +28,6 @@ INT sp. z o.o. umożliwia wszystkim partnerom dostarczanie kompleksowych rozwią
                 </div>
             </div>
         </div>
-
-      {/*<div className='Flexible__baner flex'>
-            <div className='Flexible__baner-wrap flex'>
-                <Numbers number="120" text="Zadowolonych firm"/>
-              <Numbers number="1500" text="Wykonanych projektów"/>
-               <Numbers number="100%" text="Satysfakcji"/>           
-        /     </div>      
-     //    </div>
-  */}
     </div>
   )
 }
