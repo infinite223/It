@@ -4,25 +4,24 @@ import CountUp from 'react-countup';
 
 import VisibilitySensor from 'react-visibility-sensor';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="content" />
-      <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-        {({ isVisible }) => (
-          <div style={{ height: 100 }}>
-            {isVisible ? <CountUp end={1000} /> : null}
-          </div>
-        )}
-      </VisibilitySensor>
-    </div>
-  );
-}
-
-export const Numbers = ({number,text}) => {
+export const Numbers = ({number, text, type}) => {
+  function App() {
+    return (
+      <div>
+        <VisibilitySensor partialVisibility>
+          {({ isVisible }) => (
+            <div>
+              {isVisible ? <CountUp end={number} /> : null}0{type}
+            </div>
+          )}
+        </VisibilitySensor>
+      </div>
+    );
+  }
+  
   return (
     <div className='Numbers flex' onBlur={()=>console.log("elo")} onFocus={()=>console.log("elo")}>
-        <h2>{number}{App()}</h2>
+        <h2>{App()}</h2>
         <h3>{text}</h3>
         <hr style={{width:"30%",height:"3px",color:"white",border:"0px",backgroundColor:"white"}}/>
     </div>
