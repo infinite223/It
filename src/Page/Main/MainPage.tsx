@@ -10,8 +10,6 @@ export const MainPage = () => {
       <Flexible/>
       <About/>
       <Services/>
-     {// <Images/>
-     }
       <Footer/>
     </div>
   );

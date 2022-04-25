@@ -1,10 +1,6 @@
 import React from 'react'
 import "./Helps.scss"
 
-import { FiDatabase } from "react-icons/fi"
-import { BiInfinite }  from "react-icons/bi"
-import { BsGlobe }  from "react-icons/bs"
-
 import priorityIcon from "../../../images/icons/priority.png"
 import satisfactionIcon from "../../../images/icons/satisfaction.png"
 import teamIcon from "../../../images/icons/management.png"
@@ -17,7 +13,6 @@ export const Helps = () => {
         <h1>Pomożemy rozwiązać Twój problem w biznesie i nie tylko</h1>
         <div className='Helps__content flex'>   
             <div className='Helps__content-box flex'>
-                {/*<FiDatabase size={35}/>*/}
                 <img src={priorityIcon} width="40px"/>
                 <h3>PRIORYTETY</h3>
                 <p>
@@ -26,7 +21,6 @@ export const Helps = () => {
                 </p>
             </div>
             <div className='Helps__content-box flex'>
-                {/*<BiInfinite size={35}/>*/}
                 <img src={satisfactionIcon} width="40px"/>
                 <h3>DOŚWIADCZENIE</h3>
                 <p>
@@ -34,12 +28,11 @@ export const Helps = () => {
                 </p>
             </div>
             <div className='Helps__content-box flex'>
-                {/*<BsGlobe size={35}/>*/}
                 <img src={teamIcon} width="45px"/>
                 <h3>JAK DZIAŁAMY</h3>
                 <p>
                     Działamy i pilnujemy Państwa firmy przez 24h na dobe by dostarczać najlepsze usługi.
-                    to daj do Pomożemy rozwiązać Twój problem w biznesie i nie tylko
+                    Pomożemy rozwiązać Twój problem w biznesie i nie tylko
                 </p>
             </div>
         </div>

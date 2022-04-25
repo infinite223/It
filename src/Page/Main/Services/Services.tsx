@@ -11,6 +11,9 @@ import helpIcon from './../../../images/icons/help.png'
 import helpDeskIcon from './../../../images/icons/help-desk.png'
 import informationtIcon from './../../../images/icons/information.png'
 
+import VisibilitySensor from 'react-visibility-sensor';
+import { motion } from 'framer-motion'
+
 export const Services = () => {
   const items = [
     {
@@ -57,15 +60,19 @@ export const Services = () => {
   ]
 
   return (
-    <div className='Services flex' id="Services">
-        <div className='Services__content flex'>
+      <motion.div className='Services flex' id="Services"     
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          exit={{opacity:0}}
+      >
+          <div className='Services__content flex'>
             <h1>Nasze usługi</h1>
-            <div className='Services__content-items flex'>
-                {items.map(item =>{
-                  return <Item icon={item.icon} title={item.title} description={item.description}/>
-                })}
-            </div>
+          <div className='Services__content-items flex'>
+              {items.map(item =>{
+                return <Item icon={item.icon} title={item.title} description={item.description}/>
+              })}
+          </div>
         </div>
-    </div>
+      </motion.div>
   )
 }
