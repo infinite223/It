@@ -18,13 +18,14 @@
     padding: .7rem;
 
     border: 2px solid black;
+    transition: all 0.4s ease;
 
     color: black;
     text-align: center;
 
     &:hover{
       background-color: black;
-
+      
       color: white;
       
       cursor: pointer;

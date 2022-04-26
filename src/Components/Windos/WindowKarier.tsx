@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { send } from 'emailjs-com';
 import "./Window.scss"
+import { motion } from 'framer-motion';
 
 export const WindowKarier = ({setToggleWindowKarier}) => {
     const [scrolled,setScrolled]=React.useState(false);
@@ -57,7 +58,10 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
   
       
   return (
-    <div className='window'>
+    <motion.div className='window'
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+    >
         <div className='button-exit' onClick={()=>setToggleWindowKarier(false)}>Exit</div>
         <h1>Kariera</h1>
         
@@ -205,6 +209,6 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                 <button type='submit' className='button-apply'>Aplikuj</button>
             </form>
         </div>
-    </div>
+    </motion.div>
   )
 }

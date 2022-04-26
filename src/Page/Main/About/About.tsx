@@ -1,11 +1,17 @@
 import React from 'react'
 import { Numbers } from '../Flexible/Numbers/Numbers.tsx'
 import "./About.scss"
+import { motion } from 'framer-motion'
 
 export const About = () => {
   return (
-    <div className='About flex' id="About">
-      <p>
+    <div className='About flex' id="About"
+   >
+      <motion.p
+          initial={{opacity:0}}
+          transition={{duration:1.7}}
+          whileInView={{opacity:1}}
+      >
         <h1>O INT</h1>
           INT to jedna z największych na świecie dystrybutorów technologii. 
           Pomagamy małym, średnim i dużym firmom wprowadzić swoje produkty na rynek, 
@@ -15,7 +21,7 @@ export const About = () => {
           została stworzone właśnie w naszej firmie, pomagamy rosnąć naszym klientom dzięki zoptypmalizowanym skrypton 
           pomagającym wyjść na świat. Dzięki doświadczeniu naszych pracowników, udoskonalamy firmy poprzez tworzenie i 
           analize danych.
-        </p>
+        </motion.p>
 
         <div className='Flexible__baner flex'>
             <div className='Flexible__baner-wrap flex'>

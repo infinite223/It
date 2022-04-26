@@ -32,6 +32,8 @@
         
             color: black;
             text-align: center;
+
+            transition: all 0.4s ease;
         
             &:hover{
               background-color:  rgb(79, 85, 85);
@@ -183,6 +185,8 @@ input{
 
     border: 1px solid rgb(109, 116, 116);
     background-color: transparent;
+
+    transition: all 0.4s ease;
         
     color: black;
     text-align: center;

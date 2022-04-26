@@ -28,7 +28,11 @@ export const Navbar = () => {
   }
 
   return (
-    <div className='Navbar'>
+    <motion.div className='Navbar' 
+      initial={{y:-150}}
+      animate={{y:0}}
+      transition={{type:'tween'}}
+    >
       <a href="#Header"><div className='Navbar-logo'>INT</div></a>
       <div className='Navbar__menu'>
         <a href="#Header"><div className='Navbar__menu-link'>Home</div></a>
@@ -53,7 +57,6 @@ export const Navbar = () => {
           <a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>
         </motion.div>}
       </div>
-
-    </div>
+    </motion.div>
   )
 }

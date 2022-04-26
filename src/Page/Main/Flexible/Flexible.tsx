@@ -1,9 +1,14 @@
 import React from 'react'
 import "./Flexible.scss"
+import { motion } from 'framer-motion'
 
 export const Flexible = () => {
   return (
-    <div className='Flexible flex'>
+    <motion.div className='Flexible flex'
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:1.4}}
+    >
         <div className='Flexible__content'>
             <h1>Wyprzedzamy konkurencje o dwa kroki</h1>
             <div className='text'>
@@ -28,6 +33,6 @@ export const Flexible = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }

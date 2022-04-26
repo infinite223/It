@@ -5,11 +5,17 @@ import priorityIcon from "../../../images/icons/priority.png"
 import satisfactionIcon from "../../../images/icons/satisfaction.png"
 import teamIcon from "../../../images/icons/management.png"
 
+import { motion } from 'framer-motion'
+
 
 
 export const Helps = () => {
   return (
-    <div className='Helps flex'>
+    <motion.div className='Helps flex'
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:1.4}}
+    >
         <h1>Pomożemy rozwiązać Twój problem w biznesie i nie tylko</h1>
         <div className='Helps__content flex'>   
             <div className='Helps__content-box flex'>
@@ -37,6 +43,6 @@ export const Helps = () => {
             </div>
         </div>
         <a href="#About"><div className='button'>O INT</div></a>
-    </div>
+    </motion.div>
   )
 }

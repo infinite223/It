@@ -45,7 +45,7 @@
     
               textarea{
                 width: 65%;
-                height: 150px;
+                height: 100px;
                 margin: 4px 0px;
                 text-align: left;
                 text-indent: 5px;
@@ -75,6 +75,8 @@
                 border: solid 1.5px #000000;
                 background-color: #D3D3D3;
                 color: black;
+
+                transition: all 0.4s ease;
             
                 &:hover{
                   background-color: black;

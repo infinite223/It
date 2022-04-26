@@ -1,14 +1,16 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 import './Header.scss'
 
 export const Header = () => {
 
   return (
-    <div className='Header flex' id="Header">
+    <motion.div className='Header flex' id="Header"
+      initial={{opacity:0}}
+      transition={{duration:1.7}}
+      whileInView={{opacity:1}}
+    >
       <div className='Header__content flex'>
-       {// <div className='Header__content-image'></div>
-}
         <div className='Header__content-main flex'>
         <text>INT sp. z o.o.</text>
         <h1>Wdrażanie nowych technologii</h1>
@@ -19,6 +21,6 @@ export const Header = () => {
         </div>
         </div>       
       </div>
-    </div>
+    </motion.div>
   )
 }

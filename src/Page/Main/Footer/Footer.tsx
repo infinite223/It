@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { send } from 'emailjs-com';
+import { motion } from 'framer-motion';
 import { MdOutlineTextsms } from "react-icons/md"
 import { WindowReg } from '../../../Components/Windos/WindowReg.tsx';
 import { WindowKarier } from '../../../Components/Windos/WindowKarier.tsx';
@@ -42,12 +43,16 @@ export const Footer = () => {
   
 
   return (
-    <section className='Footer flex' id="Footer">
+    <motion.section className='Footer flex' id="Footer"
+      initial={{y:300}}
+      whileInView={{y:0}}
+      transition={{type:'spring', duration:1}}
+    >
       
       <div className='Footer__contact flex'>   
        <form onSubmit={onSubmit}>
             
-          <h1>Formularz kontaktowy. <MdOutlineTextsms color='grey' size={35}/></h1>
+          <h1>Formularz kontaktowy . <MdOutlineTextsms color='grey' size={35}/></h1>
           <label>Imię i nazwisko</label>
           <input
             type='text'
@@ -100,8 +105,9 @@ export const Footer = () => {
       {toggleWindowPp&&<WindowPp setToggleWindowPp={setToggleWindowPp}/>}
       {toggleWindowInfo&&<WindowInfo setToggleWindowInfo={setToggleWindowInfo}/>}
       <p>
+        <br/><br/><br/><br/>
         Copyright © 2022 INT All rights reserved.
       </p>
-    </section>
+    </motion.section>
   )
 }

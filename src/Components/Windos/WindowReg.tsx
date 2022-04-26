@@ -1,8 +1,12 @@
 import React from 'react'
 import "./Window.scss"
+import { motion } from 'framer-motion'
 export const WindowReg = ({setToggleWindowReg}) => {
   return (
-    <div className='window flex'>
+    <motion.div className='window flex'
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+    >
         <div className='button-exit' onClick={()=>setToggleWindowReg(false)}>Exit</div>
         <h1>Regulamin</h1>
         <p>Mąż przed wyjściem do pracy mówi do żony:<br/>
@@ -12,6 +16,6 @@ export const WindowReg = ({setToggleWindowReg}) => {
         <p>
             ale wiesz... to będzie scrolowane w dół.... więc nie martw się o miejsce, jakby co
         </p>
-    </div>
+    </motion.div>
   )
 }

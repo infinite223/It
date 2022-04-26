@@ -60,10 +60,10 @@ export const Services = () => {
   ]
 
   return (
-      <motion.div className='Services flex' id="Services"     
+      <motion.div className='Services flex' id="Services"    
           initial={{opacity:0}}
-          animate={{opacity:1}}
-          exit={{opacity:0}}
+          whileInView={{opacity:1}}
+          transition={{duration:1.4}}
       >
           <div className='Services__content flex'>
             <h1>Nasze usługi</h1>
