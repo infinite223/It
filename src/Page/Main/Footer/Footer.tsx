@@ -50,7 +50,11 @@ export const Footer = () => {
     >
       
       <div className='Footer__contact flex'>   
-       <form onSubmit={onSubmit}>
+       <motion.form onSubmit={onSubmit}
+         initial={{opacity:0}}
+         whileInView={{opacity:1}}
+         transition={{duration:2.5, delay:.2}}
+       >
             
           <h1>Formularz kontaktowy . <MdOutlineTextsms color='grey' size={35}/></h1>
           <label>Imię i nazwisko</label>
@@ -87,16 +91,41 @@ export const Footer = () => {
           </textarea>
           <button type='submit'>Wyślij wiadomość</button>
           
-       </form>
+       </motion.form>
 
         <div className='Footer__links flex' id="Karier">
-          <h1 onClick={()=>setToggleWindowInfo(true)}>Informacje</h1>
-          <hr className='hr-style'/>
-          <h1 onClick={()=>setToggleWindowReg(true)}>Regulamin</h1>  
-          <hr  className='hr-style'/>
-          <h1 onClick={()=>setToggleWindowPp(true)}>Polityka prywatności</h1>
-          <hr  className='hr-style'/>
-          <h1 onClick={()=>setToggleWindowKarier(true)}>Kariera</h1>
+          <motion.div
+              initial={{x:"300px",opacity:0}}
+              whileInView={{x:0,opacity:1}}
+              transition={{duration:1}}
+          >       
+            <h1 onClick={()=>setToggleWindowInfo(true)}>Informacje</h1>
+            <hr className='hr-style'/>
+          </motion.div>
+          <motion.div
+              initial={{x:"300px",opacity:0}}
+              whileInView={{x:0,opacity:1}}
+              transition={{duration:.9, delay:.5}}
+          > 
+            <h1 onClick={()=>setToggleWindowReg(true)}>Regulamin</h1>  
+            <hr  className='hr-style'/>
+          </motion.div>
+          <motion.div
+              initial={{x:"300px",opacity:0}}
+              whileInView={{x:0,opacity:1}}
+              transition={{duration:.8, delay:1}}
+          >   
+            <h1 onClick={()=>setToggleWindowPp(true)}>Polityka prywatności</h1>
+            <hr  className='hr-style'/>
+          </motion.div>  
+          <motion.div
+              initial={{x:"300px",opacity:0}}
+              whileInView={{x:0,opacity:1}}
+              transition={{duration:.7, delay:1.5}}
+          >   
+            <h1 onClick={()=>setToggleWindowKarier(true)}>Kariera</h1>
+            <hr  className='hr-style'/>
+          </motion.div>  
         </div>
         
       </div>
