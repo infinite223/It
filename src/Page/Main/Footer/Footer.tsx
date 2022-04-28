@@ -95,7 +95,7 @@ export const Footer = () => {
 
         <div className='Footer__links flex' id="Karier">
           <motion.div
-              initial={{x:"300px",opacity:0}}
+              initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
               transition={{duration:1}}
           >       
@@ -103,7 +103,7 @@ export const Footer = () => {
             <hr className='hr-style'/>
           </motion.div>
           <motion.div
-              initial={{x:"300px",opacity:0}}
+              initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
               transition={{duration:.9, delay:.5}}
           > 
@@ -111,7 +111,7 @@ export const Footer = () => {
             <hr  className='hr-style'/>
           </motion.div>
           <motion.div
-              initial={{x:"300px",opacity:0}}
+              initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
               transition={{duration:.8, delay:1}}
           >   
@@ -119,7 +119,7 @@ export const Footer = () => {
             <hr  className='hr-style'/>
           </motion.div>  
           <motion.div
-              initial={{x:"300px",opacity:0}}
+              initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
               transition={{duration:.7, delay:1.5}}
           >   
@@ -135,7 +135,7 @@ export const Footer = () => {
       {toggleWindowInfo&&<WindowInfo setToggleWindowInfo={setToggleWindowInfo}/>}
       <p>
         <br/><br/><br/><br/>
-        Copyright © 2022 INT All rights reserved.
+        <text style={{opacity:".4"}}>Copyright © 2022 INT All rights reserved.</text>
       </p>
     </motion.section>
   )
