@@ -38,7 +38,6 @@ export const Helps = () => {
                 <h3>JAK DZIAŁAMY</h3>
                 <p>
                     Działamy i pilnujemy Państwa firmy przez 24h na dobe by dostarczać najlepsze usługi.
-                    Pomożemy rozwiązać Twój problem w biznesie i nie tylko
                 </p>
             </div>
         </div>
