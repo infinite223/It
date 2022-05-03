@@ -18,15 +18,11 @@
 
     color: rgb(34, 32, 32);
 
-    .button-exit{
-            width: 60px;
+    .button-exit, .button-accept{
             height: fit-content;
             position: absolute;
-            right: 20px;
-            top: 20px;
-            
         
-            padding: .14rem;
+            padding: .14rem 1rem;
         
             border: 2px solid rgb(79, 85, 85);;
         
@@ -42,6 +38,16 @@
               
               cursor: pointer;
             }        
+    }
+
+    .button-exit {
+      right: 20px;
+      top: 20px;
+    }
+
+    .button-accept {
+      right: 20px;
+      bottom: 20px;
     }
 
     p{

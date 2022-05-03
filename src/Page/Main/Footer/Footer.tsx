@@ -4,15 +4,14 @@ import { motion } from 'framer-motion';
 import { MdOutlineTextsms } from "react-icons/md"
 import { WindowReg } from '../../../Components/Windos/WindowReg.tsx';
 import { WindowKarier } from '../../../Components/Windos/WindowKarier.tsx';
-import { WindowPp } from '../../../Components/Windos/WindowPp.tsx';
 import { WindowInfo } from '../../../Components/Windos/WindowInfo.tsx';
 
 import "./Footer.scss"
 
-export const Footer = () => {
+export const Footer = ({ setToggleWindowPp }) => {
   const [toggleWindowReg, setToggleWindowReg] = useState(false);
   const [toggleWindowKarier, setToggleWindowKarier] = useState(false);
-  const [toggleWindowPp, setToggleWindowPp] = useState(false);
+
   const [toggleWindowInfo, setToggleWindowInfo] = useState(false);
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -130,8 +129,7 @@ export const Footer = () => {
         
       </div>
       {toggleWindowReg&&<WindowReg setToggleWindowReg={setToggleWindowReg}/>}
-      {toggleWindowKarier&&<WindowKarier setToggleWindowKarier={setToggleWindowKarier}/>}
-      {toggleWindowPp&&<WindowPp setToggleWindowPp={setToggleWindowPp}/>}
+      {toggleWindowKarier&&<WindowKarier setToggleWindowKarier={setToggleWindowKarier}/>}      
       {toggleWindowInfo&&<WindowInfo setToggleWindowInfo={setToggleWindowInfo}/>}
       <p>
         <br/><br/><br/><br/>
