@@ -67,7 +67,7 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
         
         <div className='window__content'>
          <form onSubmit={onSubmit}>
-            <h1>Aplikuj do naszej firmy</h1>
+            <h2>Aplikuj do naszej firmy</h2>
             <h2>Dane osobowe</h2>
             <div className='window__content-data'>
                 <form className='my-form'>

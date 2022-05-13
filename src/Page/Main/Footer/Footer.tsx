@@ -4,15 +4,13 @@ import { motion } from 'framer-motion';
 import { MdOutlineTextsms } from "react-icons/md"
 import { WindowReg } from '../../../Components/Windos/WindowReg.tsx';
 import { WindowKarier } from '../../../Components/Windos/WindowKarier.tsx';
-import { WindowInfo } from '../../../Components/Windos/WindowInfo.tsx';
 
 import "./Footer.scss"
 
-export const Footer = ({ setToggleWindowPp }) => {
+export const Footer = ({ setToggleWindowPp, setToggleWindowInfo }) => {
   const [toggleWindowReg, setToggleWindowReg] = useState(false);
   const [toggleWindowKarier, setToggleWindowKarier] = useState(false);
 
-  const [toggleWindowInfo, setToggleWindowInfo] = useState(false);
   const [toSend, setToSend] = useState({
     from_name: '',
     to_name: '',
@@ -93,14 +91,7 @@ export const Footer = ({ setToggleWindowPp }) => {
        </motion.form>
 
         <div className='Footer__links flex' id="Karier">
-          <motion.div
-              initial={{x:"60%",opacity:0}}
-              whileInView={{x:0,opacity:1}}
-              transition={{duration:1}}
-          >       
-            <h1 onClick={()=>setToggleWindowInfo(true)}>Informacje</h1>
-            <hr className='hr-style'/>
-          </motion.div>
+          
           <motion.div
               initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
@@ -130,7 +121,7 @@ export const Footer = ({ setToggleWindowPp }) => {
       </div>
       {toggleWindowReg&&<WindowReg setToggleWindowReg={setToggleWindowReg}/>}
       {toggleWindowKarier&&<WindowKarier setToggleWindowKarier={setToggleWindowKarier}/>}      
-      {toggleWindowInfo&&<WindowInfo setToggleWindowInfo={setToggleWindowInfo}/>}
+
       <p>
         <br/><br/><br/><br/>
         <text style={{opacity:".4"}}>Copyright © 2022 INT All rights reserved.</text>

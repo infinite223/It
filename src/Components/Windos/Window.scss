@@ -18,6 +18,8 @@
 
     color: rgb(34, 32, 32);
 
+   
+
     .button-exit, .button-accept{
             height: fit-content;
             position: absolute;
@@ -50,12 +52,6 @@
       bottom: 20px;
     }
 
-    p{
-        padding: 1rem 4rem;
-
-        line-height: 23px;
-        text-align: center;
-    }
 
 
     @media screen and (max-width:850px){
@@ -69,14 +65,16 @@
 
      } 
 
-
-
      h1{
-       text-align: center;
+       position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 10px;
      }
 
     .window__content{
       width: 550px;
+      margin-top: 70px;
       max-height: 80%;
       overflow-y:scroll;
       overflow-x:hidden;
@@ -102,8 +100,29 @@
         font-weight: 300;
         color: rgb(63, 58, 58);
       }
+      
+      p{
+        padding: 1rem 4rem;
 
-      padding: 2rem 1rem;
+        line-height: 23px;
+        text-align: left;
+      }
+
+      b {
+        &:hover {
+          color: rgb(161, 156, 156);
+          transition: all .3s ease-in-out;
+          cursor: pointer;
+        }
+      }
+
+      li {
+        padding-left: 1.2rem;
+        padding-right: 3rem;
+
+        margin-top: 10px;
+      }
+    
 
       .my-form{
         display: flex;
