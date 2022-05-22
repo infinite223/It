@@ -10,7 +10,7 @@ export const WindowReg = ({setToggleWindowReg}) => {
         <div className='button-exit' onClick={()=>setToggleWindowReg(false)}>Exit</div>
         <h1>Regulamin serwisu internetowego www.INT.pl</h1>
         <div className='window__content'>  
-        Strona Główna / Regulamin
+            Strona Główna / Regulamin
             Przed rozpoczęciem korzystania z serwisu internetowego www.INT.com Usługobiorcy są zobowiązani zapoznać się z treścią Regulaminu.
             <br /><br/>§1. POSTANOWIENIA OGÓLNE
           <ol>

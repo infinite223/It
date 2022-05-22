@@ -43,7 +43,7 @@ export const Navbar = () => {
       </div>
       
       <div className='Navbar__menu-smallscreen'>
-        <GiHamburgerMenu color='white' fontSize={27} onClick={()=>setToggleMenu(true)}/>
+        <GiHamburgerMenu color='#bfa68a' fontSize={27} onClick={()=>setToggleMenu(true)}/>
         {toggleMenu&&<motion.div 
            animate={{width:[10,25,50,100,150,200,240,240,250]}}
            transition={{ duration: .3 }}    
@@ -52,9 +52,9 @@ export const Navbar = () => {
           <IoCloseOutline fontSize={27} className='close' onClick={()=>setToggleMenu(false)}/>
           <a href="#Header"><div className='Navbar__menu-link-small' >Home</div></a>
           <a href="#About"><div className='Navbar__menu-link-small'>O INT</div></a>
-          <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
+          <a href="#Services"><div className='Navbar__menu-link-small'>Usługi</div></a>
           <a href="#Footer"><div className='Navbar__menu-link-small'>Kontakt</div></a>
-          <a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>
+          <a href="#Karier"><div className='Navbar__menu-link-small'>Informacje</div></a>
         </motion.div>}
       </div>
     </motion.div>
