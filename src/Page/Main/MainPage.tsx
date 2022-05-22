@@ -23,18 +23,21 @@ export const MainPage = () => {
   },[])
   
   return (
-    <div className="App">
-      <Navbar/>
-      <Header/>
-      <Helps/>
-      <Image/>
-      <Flexible/>
-      <About/>
-      <Services/>
-      {toggleWindowPp&&<WindowPp setToggleWindowPp={setToggleWindowPp} />}
-      {toggleWindowInfo&&<WindowInfo setToggleWindowPp={setToggleWindowPp} setToggleWindowInfo={setToggleWindowInfo} accept={accept} setAccept={setAccept}/>}
+    <>
+      <div className="App">
+        <Navbar/>
+        <Header/>
+        <Helps/>
+        <Image/>
+        <Flexible/>
+        <About/>
+        <Services/>
+        {toggleWindowPp&&<WindowPp setToggleWindowPp={setToggleWindowPp} />}
+        {toggleWindowInfo&&<WindowInfo setToggleWindowPp={setToggleWindowPp} setToggleWindowInfo={setToggleWindowInfo} accept={accept} setAccept={setAccept}/>}
+        
+      </div>
       <Footer setToggleWindowPp={setToggleWindowPp} />
-    </div>
+    </>
   );
 }
 

@@ -67,7 +67,7 @@ export const Services = () => {
       >
           <div className='Services__content flex'>
             <h1>Nasze usługi</h1>
-          <div className='Services__content-items flex'>
+          <div className='Services__content-items flex disable-selection'>
               {items.map(item =>{
                 return <Item icon={item.icon} title={item.title} description={item.description}/>
               })}

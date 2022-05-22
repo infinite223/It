@@ -40,7 +40,7 @@ export const Footer = ({ setToggleWindowPp, setToggleWindowInfo }) => {
   
 
   return (
-    <motion.section className='Footer flex' id="Footer"
+    <motion.section className='Footer flex disable-selection' id="Footer"
       initial={{y:300}}
       whileInView={{y:0}}
       transition={{type:'spring', duration:1}}
@@ -90,7 +90,7 @@ export const Footer = ({ setToggleWindowPp, setToggleWindowInfo }) => {
           
        </motion.form>
 
-        <div className='Footer__links flex' id="Karier">
+        <div className='Footer__links flex ' id="Karier">
           
           <motion.div
               initial={{x:"60%",opacity:0}}
