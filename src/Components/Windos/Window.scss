@@ -223,3 +223,43 @@ input{
       cursor: pointer;
     }   
 }
+
+.apply{
+  padding: 1rem;
+  visibility: hidden;
+  height: 0px;
+  
+  background-color: rgb(200, 200, 200);
+
+  text {
+    width: 70%;
+
+    text-align: center;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    padding: .2rem .5rem;
+    width: 70px;
+    margin: 10px;
+        
+    border: 2px solid rgb(79, 85, 85);
+    background-color: transparent;
+
+    color: black;
+    text-align: center;
+
+    transition: all 0.4s ease;
+
+    &:hover{
+      background-color:  rgb(79, 85, 85);
+
+      color: white;
+      
+      cursor: pointer;
+    }        
+  }
+}
+.show{
+  visibility:visible;
+  height: max-content;
+}

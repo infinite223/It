@@ -4,7 +4,8 @@ import "./Window.scss"
 import { motion } from 'framer-motion';
 
 export const WindowKarier = ({setToggleWindowKarier}) => {
-    const [scrolled,setScrolled]=React.useState(false);
+    const [ scrolled, setScrolled ]=React.useState(false);
+    const [ showApply, setShowApply ] = useState("apply flex");
     const handleScroll=() => {
       const offset=window.scrollY;
       if(offset > 200 ){
@@ -206,7 +207,14 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                     onChange={handleChange} 
                     type="file"/>
             </form>*/}
-                <button type='submit' className='button-apply'>Aplikuj</button>
+                
+                <div className='button-apply' onClick={()=>setShowApply("apply show flex")}>Aplikuj</div>
+                <div className={showApply}>
+                  <text>Czy na pewno chcesz wysłać zgłoszenie?</text>
+                  <input className='button flex' onClick={()=>setShowApply("apply flex")} type="button"  value="Nie"/>
+                  <input className='button flex' onClick={()=>(setShowApply("apply flex"))} type="submit" value="Tak" />
+              
+                </div>
             </form>
         </div>
     </motion.div>
