@@ -28,7 +28,7 @@ export const Flexible = () => {
                 </div>
                 <div className='Flexible__content__main-box'>
                 <h2>Nasze umiejętności</h2>
-                    <text>Zatrudniamy tylko wyspecializowanych pracowników z najlepszymi kompetencjami do świadczenia najlpszych usług.
+                    <text>Zatrudniamy tylko wyspecializowanych pracowników z najlepszymi kompetencjami do świadczenia najlepszych usług.
                     </text>
                 </div>
             </div>
