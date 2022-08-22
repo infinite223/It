@@ -33,10 +33,10 @@ export const Navbar = () => {
       animate={{y:0}}
       transition={{type:'tween'}}
     >
-      <a href="#Header"><div className='Navbar-logo'>INT</div></a>
+      <a href="#Header"><div className='Navbar-logo'>INTKOD</div></a>
       <div className='Navbar__menu'>
         <a href="#Header"><div className='Navbar__menu-link'>Home</div></a>
-        <a href="#About"><div className='Navbar__menu-link'>O INT</div></a>
+        <a href="#About"><div className='Navbar__menu-link'>O INTKOD</div></a>
         <a href="#Services"><div className='Navbar__menu-link'>Usługi</div></a>
         <a href="#Footer"><div className='Navbar__menu-link'>Kontakt</div></a>
         {/*<a href="#Karier"><div className='Navbar__menu-link'>Informacje</div></a>*/}
@@ -51,7 +51,7 @@ export const Navbar = () => {
         >
           <IoCloseOutline fontSize={27} className='close' onClick={()=>setToggleMenu(false)}/>
           <a href="#Header"><div className='Navbar__menu-link-small' >Home</div></a>
-          <a href="#About"><div className='Navbar__menu-link-small'>O INT</div></a>
+          <a href="#About"><div className='Navbar__menu-link-small'>O INTKOD</div></a>
           <a href="#Services"><div className='Navbar__menu-link-small'>Usługi</div></a>
           <a href="#Footer"><div className='Navbar__menu-link-small'>Kontakt</div></a>
           <a href="#Karier"><div className='Navbar__menu-link-small'>Informacje</div></a>

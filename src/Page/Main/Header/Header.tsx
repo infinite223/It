@@ -12,10 +12,10 @@ export const Header = () => {
     >
       <div className='Header__content flex'>
         <div className='Header__content-main flex'>
-        <text>INT sp. z o.o.</text>
+        <text>INTKOD sp. z o.o.</text>
         <h1>Wdrażanie nowych technologii</h1>
         <div className='Header__content-buttons flex'>
-          <a href="#About"><div className='button'>O INT</div></a>
+          <a href="#About"><div className='button'>O INTKOD</div></a>
           <text></text>
           <a href="#Footer"><div className='button'>Kontakt</div></a>
         </div>

@@ -8,15 +8,15 @@ export const WindowReg = ({setToggleWindowReg}) => {
       animate={{opacity:1}}
     >
         <div className='button-exit' onClick={()=>setToggleWindowReg(false)}>Exit</div>
-        <h1>Regulamin serwisu internetowego www.INT.pl</h1>
+        <h1>Regulamin serwisu internetowego www.INTKOD.pl</h1>
         <div className='window__content'>  
             Strona Główna / Regulamin
-            Przed rozpoczęciem korzystania z serwisu internetowego www.INT.com Usługobiorcy są zobowiązani zapoznać się z treścią Regulaminu.
+            Przed rozpoczęciem korzystania z serwisu internetowego www.INTKOD.com Usługobiorcy są zobowiązani zapoznać się z treścią Regulaminu.
             <br /><br/>§1. POSTANOWIENIA OGÓLNE
           <ol>
             
             <li>
-              Serwis internetowy działający pod adresem www.wynajmijhakera.pl prowadzony jest przez INT SPÓŁKĘ 
+              Serwis internetowy działający pod adresem www.wynajmijhakera.pl prowadzony jest przez INTKOD SPÓŁKĘ 
               Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ wpisaną do Rejestru Przedsiębiorców prowadzonego przez Sąd Rejonowy
                Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS: 
                0000871398, NIP: 6342984273, REGON: 387616994, adres miejsca wykonywania działalności oraz adres do doręczeń:
@@ -31,7 +31,7 @@ export const WindowReg = ({setToggleWindowReg}) => {
               rozwiązywania umów o świadczenie usług drogą elektroniczną, a także tryb postępowania reklamacyjnego.
             </li>
             <li>
-              Każdy Usługobiorca z chwilą podjęcia czynności zmierzających do korzystania z Usług Elektronicznych Serwisu www.INT.com,
+              Każdy Usługobiorca z chwilą podjęcia czynności zmierzających do korzystania z Usług Elektronicznych Serwisu www.INTKOD.com,
               zobowiązany jest do przestrzegania postanowień niniejszego Regulaminu.
             </li>
             <li>
@@ -65,9 +65,9 @@ export const WindowReg = ({setToggleWindowReg}) => {
             </li>
             <li>
               Wszystkie nazwy handlowe, nazwy produktów, firm i ich logo użyte na stronie internetowej 
-              Serwisu pod adresem www.INT.coml należą do ich właścicieli i są używane wyłącznie w celach 
+              Serwisu pod adresem www.INTKOD.com należą do ich właścicieli i są używane wyłącznie w celach 
               identyfikacyjnych. Mogą być one zastrzeżonymi znakami towarowymi. Wszystkie materiały, opisy i
-              zdjęcia prezentowane na stronie internetowej Serwisu pod adresem www.INT.com użyte są w celach informacyjnych.
+              zdjęcia prezentowane na stronie internetowej Serwisu pod adresem www.INTKOD.com użyte są w celach informacyjnych.
             </li>
             <li>
               W sprawach nieuregulowanych w niniejszym Regulaminie mają zastosowanie
@@ -86,10 +86,10 @@ export const WindowReg = ({setToggleWindowReg}) => {
               REGULAMIN - niniejszy regulamin Serwisu.
             </li>
             <li>
-              SERWIS - serwis internetowy Usługodawcy działający pod adresem www.INT.com
+              SERWIS - serwis internetowy Usługodawcy działający pod adresem www.INTKOD.com
             </li>
             <li>
-              USŁUGODAWCA – INT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ wpisana do Rejestru Przedsiębiorców
+              USŁUGODAWCA – INTKOD SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ wpisana do Rejestru Przedsiębiorców
               prowadzonego przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru
               Sądowego pod numerem KRS: 0000871398, NIP: 6342984273, REGON: 387616994, 
               adres miejsca wykonywania działalności oraz adres do doręczeń: ul. Wincentego Janasa 4, 40-855 Katowice.
@@ -241,11 +241,11 @@ export const WindowReg = ({setToggleWindowReg}) => {
             <li>
               Wszystkie treści zamieszczone na stronie internetowej pod adresem www.wynajmijhakera.pl korzystają z
               ochrony prawnoautorskiej i (z wyjątkiem treści zamieszczanych przez Usługobiorców oraz elementów wykorzystywanych 
-              na zasadach licencji, przeniesienia praw autorskich lub dozwolonego użytku) są własnością INT SPÓŁKI Z OGRANICZONĄ 
+              na zasadach licencji, przeniesienia praw autorskich lub dozwolonego użytku) są własnością INTKOD SPÓŁKI Z OGRANICZONĄ 
               ODPOWIEDZIALNOŚCIĄ wpisanej do Rejestru Przedsiębiorców prowadzonego przez Sąd Rejonowy Katowice-Wschód w Katowicach,
               VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS: 0000871398, NIP: 6342984273, REGON: 387616994.
               Usługobiorca ponosi pełną odpowiedzialność za szkodę wyrządzoną Usługodawcy, 
-              będącą następstwem użycia jakiejkolwiek zawartości strony www.INT.com, bez zgody Usługodawcy.
+              będącą następstwem użycia jakiejkolwiek zawartości strony www.INTKOD.com, bez zgody Usługodawcy.
             </li>
             <li>
               Jakiekolwiek wykorzystanie przez kogokolwiek, bez wyraźnej pisemnej zgody Usługodawcy, któregokolwiek z elementów 

@@ -12,7 +12,7 @@ export const Flexible = () => {
         <div className='Flexible__content'>
             <h1>Wyprzedzamy konkurencje o dwa kroki</h1>
             <div className='text'>
-                INT sp. z o.o. umożliwia wszystkim partnerom dostarczanie kompleksowych rozwiązań IT na całym świecie, skupiając się na doractwie, wsparciu i rozwiązywaniu problemów infromatycznych,cyberbezpieczeńswie, wdrożeniach, szkoleniach, analizie bazy danych,  i technologiach nowej generacji.
+            INTKOD sp. z o.o. umożliwia wszystkim partnerom dostarczanie kompleksowych rozwiązań IT na całym świecie, skupiając się na doractwie, wsparciu i rozwiązywaniu problemów infromatycznych,cyberbezpieczeńswie, wdrożeniach, szkoleniach, analizie bazy danych,  i technologiach nowej generacji.
             </div>
 
             <div className='Flexible__content__main'>

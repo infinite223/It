@@ -12,8 +12,8 @@ export const About = () => {
           transition={{duration:1.7}}
           whileInView={{opacity:1}}
       >
-        <h1>O INT</h1>
-          INT to szybko rozwijająca się firma dostarczająca technologię. Pomagamy małym, 
+        <h1>O INTKOD</h1>
+         INTKOD to szybko rozwijająca się firma dostarczająca technologię. Pomagamy małym, 
           średnim i dużym firmom wprowadzić swoje produkty na rynek, a także oferujemy szeroki zakres 
           usług wsparcia technicznego i biznesowego. Certyfikujemy, szkolimy, instruujemy i wspieramy naszych klientów, 
           pomagamy w konfiguracji, instalacji i finansowaniu ich zakupów. Pomagamy rosnąć naszym klientom dzięki

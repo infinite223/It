@@ -41,7 +41,7 @@ export const Helps = () => {
                 </p>
             </div>
         </div>
-        <a href="#About"><div className='button'>O INT</div></a>
+        <a href="#About"><div className='button'>O INTKOD</div></a>
     </motion.div>
   )
 }

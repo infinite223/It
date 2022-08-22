@@ -124,7 +124,7 @@ export const Footer = ({ setToggleWindowPp, setToggleWindowInfo }) => {
 
       <p>
         <br/><br/><br/><br/>
-        <text style={{opacity:".4"}}>Copyright © 2022 INT All rights reserved.</text>
+        <text style={{opacity:".4"}}>Copyright © 2022 INTKOD All rights reserved.</text>
       </p>
     </motion.section>
   )
