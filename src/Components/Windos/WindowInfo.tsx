@@ -3,7 +3,6 @@ import "./WindowInfo.scss"
 import { motion } from 'framer-motion';
 import Cookies from 'js-cookie'
 export const WindowInfo = ({setToggleWindowPp, setToggleWindowInfo, accept, setAccept}) => {
-  console.log(accept)
   return (
     <motion.div className='window-Info '
       initial={{opacity:0}}

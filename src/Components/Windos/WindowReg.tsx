@@ -8,7 +8,7 @@ export const WindowReg = ({setToggleWindowReg}) => {
       animate={{opacity:1}}
     >
         <div className='button-exit' onClick={()=>setToggleWindowReg(false)}>Exit</div>
-        <h1>Regulamin serwisu internetowego www.INTKOD.pl</h1>
+        <h1 style={{textAlign:'center'}}>Regulamin serwisu internetowego <br/> www.INTKOD.pl</h1>
         <div className='window__content'>  
             Strona Główna / Regulamin
             Przed rozpoczęciem korzystania z serwisu internetowego www.INTKOD.com Usługobiorcy są zobowiązani zapoznać się z treścią Regulaminu.
@@ -20,7 +20,8 @@ export const WindowReg = ({setToggleWindowReg}) => {
               Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ wpisaną do Rejestru Przedsiębiorców prowadzonego przez Sąd Rejonowy
                Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS: 
                0000871398, NIP: 6342984273, REGON: 387616994, adres miejsca wykonywania działalności oraz adres do doręczeń:
-              ul. Wincentego Janasa 4, 40-855 Katowice, adres poczty elektronicznej (e-mail): kacpermordal@gmail.com
+              ul. Wincentego Janasa 4, 40-855 Katowice, adres poczty elektronicznej (e-mail): intkod@gmail.com
+
             </li>
             <li>
               Serwis działa na zasadach określonych w niniejszym Regulaminie.
@@ -206,7 +207,8 @@ export const WindowReg = ({setToggleWindowReg}) => {
             <li>
               Reklamacje związane ze świadczeniem Usług Elektronicznych przez Usługodawcę:<br />1.1. reklamacje związane ze
               świadczeniem Usług Elektronicznych za pośrednictwem Serwisu Usługobiorca może składać za pośrednictwem poczty 
-              elektronicznej na adres: kacpermordal@gmail.com<br /> 1.2. w powyższej wiadomości e-mail, należy podać jak najwięcej 
+              elektronicznej na adres: intkod@gmail.com
+<br /> 1.2. w powyższej wiadomości e-mail, należy podać jak najwięcej 
               informacji i okoliczności dotyczących przedmiotu reklamacji, w szczególności rodzaj i datę wystąpienia 
               nieprawidłowości oraz dane kontaktowe. Podane informacje znacznie ułatwią i przyspieszą rozpatrzenie reklamacji
               przez Usługodawcę, <br />1.3. rozpatrzenie reklamacji przez Usługodawcę następuje niezwłocznie, nie później niż w 

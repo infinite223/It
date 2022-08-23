@@ -28,9 +28,9 @@ export const WindowPp = ({setToggleWindowPp}) => {
                 <li>
                   Dane Administratora
                   Administratorem Państwa danych osobowych w rozumieniu RODO, jest Kacper Mordal – 
-                  prowadząca działalność gospodarczą pod firmą INT sp. z o.o z siedzibą w Wrocław 50-031, przy ul. 
+                  prowadząca działalność gospodarczą pod firmą INTKOD sp. z o.o z siedzibą w Wrocław 50-031, przy ul. 
                   Lubińska 4/62, adres do korespondencji: Lubińska 4/62, 53-624 Wrocław. W sprawach dotyczących ochrony danych 
-                  osobowych można się skontaktować z Administratorem także za pośrednictwem adresu email kacpermordal@gmail.com.
+                  osobowych można się skontaktować z Administratorem także za pośrednictwem adresu email intkod@gmail.com.
                 </li>
                 <li>
                   Cele i podstawy prawne przetwarzania danych
@@ -148,7 +148,8 @@ export const WindowPp = ({setToggleWindowPp}) => {
                       wpływu na zgodność z prawem przetwarzania, którego dokonano przed jej wycofaniem.
                       <br /><br/>
                       Jeśli chcą Państwo skorzystać z przysługujących Państwu praw prosimy o przesłanie do nas wiadomości na adres:
-                       kacpermordal@gmail.com, lub pocztą tradycyjną na adres: Lubińska 4/62, 53-624 Wrocław.
+                      intkod@gmail.com
+, lub pocztą tradycyjną na adres: Lubińska 4/62, 53-624 Wrocław.
                       <br /><br/>
                        Bezpieczeństwo danych osobowych jest dla nas priorytetem, jeśli jednak uznają Państwo, że przetwarzając Państwu dane osobowe naruszamy przepisy RODO, 
                        mają Państwo prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.

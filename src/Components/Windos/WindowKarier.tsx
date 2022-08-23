@@ -47,9 +47,11 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
         )
           .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
+            alert('SUCCESS!')
           })
           .catch((err) => {
             console.log('FAILED...', err);
+            alert('FAILED!')
           });
       };
     
