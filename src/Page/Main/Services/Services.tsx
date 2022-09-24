@@ -18,28 +18,28 @@ export const Services = () => {
   const items = [
     {
       title:"Help desk",
-      description:"tutaj sobie wpisz tekst, sprzedaje rocco :(",
+      description:"",
       icon:<img src={helpIcon} width="40px"/>
     },
     {
       title:"Doradztwo It",
-      description:"nie no, taki żarcik byqu, robimy 400hp",
+      description:"",
       icon:<img src={helpDeskIcon} width="40px"/>
     },
     {
       title:"Wdrażanie nowych technologii",
-      description:"ale w sumie to mnie nie stać więc jebać",
+      description:"",
       icon:<GrTechnology size={35}/>
     }
     ,
     {
-      title:"Poradniki",
-      description:"ale w sumie to mnie nie stać więc jebać",
+      title:"Szkolenia",
+      description:"",
       icon:<img src={informationtIcon} width="40px"/>
     },
     {
       title:"Analiza danych (SQL)",
-      description:"ale w sumie to mnie nie stać więc jebać",
+      description:"",
       icon:<FiDatabase size={35}/>
     },
     {
@@ -49,12 +49,12 @@ export const Services = () => {
     },
     {
       title:"Cyberbezpieczeństwo ",
-      description:"tekst jakiś ...",
+      description:"",
       icon:<GrShieldSecurity size={35}/>
     },
     {
       title:"marketing internetowy",
-      description:"tekst jakiś ...",
+      description:"",
       icon:<GrWorkshop size={35}/>
     }
   ]

@@ -2,10 +2,15 @@ import React, {useState, useEffect} from 'react'
 import { send } from 'emailjs-com';
 import "./Window.scss"
 import { motion } from 'framer-motion';
+import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+import { db, storage } from '../../firebase';
+import { collection, doc, setDoc } from 'firebase/firestore';
 
 export const WindowKarier = ({setToggleWindowKarier}) => {
     const [ scrolled, setScrolled ]=React.useState(false);
+    const [fileCv, setFileCv] = useState(null)
     const [ showApply, setShowApply ] = useState("apply flex");
+    const [ prog, setProg ] = useState(0)
     const handleScroll=() => {
       const offset=window.scrollY;
       if(offset > 200 ){
@@ -37,27 +42,60 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
         education:''
       });
     
-      const onSubmit = (e) => {
-        e.preventDefault();
-        send(
-          'service_a5oo0cn',
-          'template_51w18ub',
-          toSend,
-          'csl85PGe4P3ps10T1'
-        )
-          .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('SUCCESS!')
-          })
-          .catch((err) => {
-            console.log('FAILED...', err);
-            alert('FAILED!')
-          });
-      };
+      // const onSubmit = (e) => {
+      //   e.preventDefault();
+      //   send(
+      //     'service_a5oo0cn',
+      //     'template_51w18ub',
+      //     toSend,
+      //     'csl85PGe4P3ps10T1'
+      //   )
+      //     .then((response) => {
+      //       console.log('SUCCESS!', response.status, response.text);
+      //       alert('SUCCESS!')
+      //     })
+      //     .catch((err) => {
+      //       console.log('FAILED...', err);
+      //       alert('FAILED!')
+      //     });
+      // };
     
       const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
       };
+
+      const onSubmit = (e) => {
+        const docRef = doc(db, "usersData", toSend.email );
+        //if.... email...
+        e.preventDefault();
+        setDoc(docRef, toSend)
+        .then(() => {
+            console.log("Document has been added successfully");
+        })
+        .catch(error => {
+            console.log(error);
+        })
+        const file = e.target[0].files[0];
+        uploadCV(file)
+      }
+
+      const uploadCV = (file) => {
+        if(!file) return;
+        const storageRef = ref(storage, `/CV/${file.name}`)
+        const uploadTask = uploadBytesResumable(storageRef, file)
+
+        uploadTask.on("state_changed", (snamshot)=> {
+          const prog = Math.round((snamshot.bytesTransferred / snamshot.totalBytes) * 100)
+          setProg(prog)
+          console.log(prog)
+        },
+          (err) => console.log(err),
+          ()=> {
+            getDownloadURL(uploadTask.snapshot.ref)
+            .then((url)=> console.log(url))
+          }
+        )
+      }
   
       
   return (
@@ -201,6 +239,7 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                     onChange={handleChange} 
                     type="text" placeholder='Email'/>
             </form>
+            <input type="file"  name='cv' onChange={(e)=>setFileCv(e.target[0].files[0])}/>
            <h2 style={{fontSize:"13px"}}>Zaaplikuj a sprawdzimy Twoje zgłoszenie i odezwiemy się w ciągu 24 godzin.</h2>
              {/*<form className='my-form'>
                 <input
@@ -209,7 +248,6 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                     onChange={handleChange} 
                     type="file"/>
             </form>*/}
-                
                 <div className='button-apply' onClick={()=>setShowApply("apply show flex")}>Aplikuj</div>
                 <div className={showApply}>
                   <text>Czy na pewno chcesz wysłać zgłoszenie?</text>

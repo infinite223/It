@@ -55,7 +55,7 @@ export const Footer = ({ setToggleWindowPp, setToggleWindowInfo }) => {
          transition={{duration:2.5, delay:.2}}
        >
             
-          <h1>Formularz kontaktowy . <MdOutlineTextsms color='grey' size={35}/></h1>
+          <h1>Formularz kontaktowy  <MdOutlineTextsms color='grey' size={35}/></h1>
           <label>Imię i nazwisko</label>
           <input
             type='text'
@@ -94,14 +94,14 @@ export const Footer = ({ setToggleWindowPp, setToggleWindowInfo }) => {
 
         <div className='Footer__links flex ' id="Karier">
           
-          <motion.div
+          {/* <motion.div
               initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
               transition={{duration:.9, delay:.5}}
           > 
             <h1 onClick={()=>setToggleWindowReg(true)}>Regulamin</h1>  
             <hr  className='hr-style'/>
-          </motion.div>
+          </motion.div> */}
           <motion.div
               initial={{x:"60%",opacity:0}}
               whileInView={{x:0,opacity:1}}
