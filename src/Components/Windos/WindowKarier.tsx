@@ -42,41 +42,45 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
         education:''
       });
     
-      // const onSubmit = (e) => {
-      //   e.preventDefault();
-      //   send(
-      //     'service_a5oo0cn',
-      //     'template_51w18ub',
-      //     toSend,
-      //     'csl85PGe4P3ps10T1'
-      //   )
-      //     .then((response) => {
-      //       console.log('SUCCESS!', response.status, response.text);
-      //       alert('SUCCESS!')
-      //     })
-      //     .catch((err) => {
-      //       console.log('FAILED...', err);
-      //       alert('FAILED!')
-      //     });
-      // };
+      const emailSend = () => {
+        send(
+          'service_a5oo0cn',
+          'template_51w18ub',
+          toSend,
+          'csl85PGe4P3ps10T1'
+        )
+          .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('SUCCESS!')
+          })
+          .catch((err) => {
+            console.log('FAILED...', err);
+            alert('FAILED!')
+          });
+      };
     
       const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
       };
-
+      console.log(fileCv)
       const onSubmit = (e) => {
-        const docRef = doc(db, "usersData", toSend.email );
-        //if.... email...
-        e.preventDefault();
-        setDoc(docRef, toSend)
-        .then(() => {
-            console.log("Document has been added successfully");
-        })
-        .catch(error => {
-            console.log(error);
-        })
-        const file = e.target[0].files[0];
-        uploadCV(file)
+        if(toSend.email && fileCv){ 
+          const docRef = doc(db, "usersData", toSend.email);
+          //if.... email...
+          e.preventDefault();
+          setDoc(docRef, toSend)
+          .then(() => {
+              console.log("Document has been added successfully");
+          })
+          .catch(error => {
+              console.log(error);
+          })
+          const file = e.target[0].files[0];
+          uploadCV(file)
+        }
+        else {
+          alert("Nie podano wszystkich wymaganych danych")
+        }
       }
 
       const uploadCV = (file) => {
@@ -87,7 +91,6 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
         uploadTask.on("state_changed", (snamshot)=> {
           const prog = Math.round((snamshot.bytesTransferred / snamshot.totalBytes) * 100)
           setProg(prog)
-          console.log(prog)
         },
           (err) => console.log(err),
           ()=> {
@@ -96,6 +99,19 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
           }
         )
       }
+
+      useEffect(() => {
+        if(prog===100){
+          emailSend()
+        }
+      }, [prog])
+
+      function fileChange(event) {
+        event.preventDefault();
+       // console.log(event.target.files[0])
+        setFileCv(event.target.files[0]);
+      }
+      
   
       
   return (
@@ -239,15 +255,8 @@ export const WindowKarier = ({setToggleWindowKarier}) => {
                     onChange={handleChange} 
                     type="text" placeholder='Email'/>
             </form>
-            <input type="file"  name='cv' onChange={(e)=>setFileCv(e.target[0].files[0])}/>
+            <input style={{borderWidth:1, width:"95%", marginTop:'10px'}}  className='custom-file-input'  type="file"  name='cv' onChange={fileChange}/>
            <h2 style={{fontSize:"13px"}}>Zaaplikuj a sprawdzimy Twoje zgłoszenie i odezwiemy się w ciągu 24 godzin.</h2>
-             {/*<form className='my-form'>
-                <input
-                    className='custom-file-input' 
-                    name='cv'               
-                    onChange={handleChange} 
-                    type="file"/>
-            </form>*/}
                 <div className='button-apply' onClick={()=>setShowApply("apply show flex")}>Aplikuj</div>
                 <div className={showApply}>
                   <text>Czy na pewno chcesz wysłać zgłoszenie?</text>

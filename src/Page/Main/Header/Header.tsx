@@ -12,7 +12,7 @@ export const Header = () => {
     >
       <div className='Header__content flex'>
         <div className='Header__content-main flex'>
-        <text>INTKOD sp. z o.o.</text>
+        <text>INTKOD</text>
         <h1>Wdrażanie nowych technologii</h1>
         <div className='Header__content-buttons flex'>
           <a href="#About"><div className='button'>O INTKOD</div></a>
